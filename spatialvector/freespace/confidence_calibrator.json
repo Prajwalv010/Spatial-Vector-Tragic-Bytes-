@@ -1,0 +1,19 @@
+{
+  "model_type": "LogisticRegression",
+  "trained_split": "TUNE",
+  "subset": "WALKABLE_decisions_only",
+  "num_train_samples": 56,
+  "features": [
+    "g_margin",
+    "mean_prob",
+    "cue_agreement",
+    "temporal_frac"
+  ],
+  "weights": {
+    "g_margin": 0.612990698532831,
+    "mean_prob": -0.005880166142489396,
+    "cue_agreement": -0.0017507361763445858,
+    "temporal_frac": 0.0
+  },
+  "intercept": 1.0079556426379757
+}
