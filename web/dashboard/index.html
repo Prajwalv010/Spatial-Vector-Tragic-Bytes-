@@ -1,0 +1,2287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SpatialVector-HMI — Mobile Assistive Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-app: #f8fafc;
+            --bg-card: #ffffff;
+            --border-light: #e2e8f0;
+            --border-subtle: #f1f5f9;
+            --text-title: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --text-dim: #94a3b8;
+
+            --c-primary: #2563eb;
+            --c-primary-light: #eff6ff;
+            --c-safe: #10b981;
+            --c-safe-bg: #ecfdf5;
+            --c-safe-border: #a7f3d0;
+            --c-safe-text: #065f46;
+
+            --c-caution: #f59e0b;
+            --c-caution-bg: #fffbeb;
+            --c-caution-border: #fde68a;
+            --c-caution-text: #92400e;
+
+            --c-warning: #f97316;
+            --c-warning-bg: #fff7ed;
+            --c-warning-border: #fed7aa;
+            --c-warning-text: #9a3412;
+
+            --c-critical: #ef4444;
+            --c-critical-bg: #fef2f2;
+            --c-critical-border: #fecaca;
+            --c-critical-text: #991b1b;
+
+            --c-degraded: #8b5cf6;
+            --c-degraded-bg: #f5f3ff;
+            --c-degraded-border: #ddd6fe;
+            --c-degraded-text: #5b21b6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        button {
+            outline: none !important;
+            border: none;
+            background: none;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+        }
+        button:focus, button:focus-visible {
+            outline: none !important;
+        }
+
+        body {
+            background-color: #0b0f17;
+            background-image: radial-gradient(circle at 50% 15%, #1e293b 0%, #080c14 85%);
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-body);
+            height: 100vh;
+            height: 100dvh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* ------------------------------------------------------------- */
+        /* RESPONSIVE MOBILE DEVICE SHELL                                */
+        /* ------------------------------------------------------------- */
+        .app-shell {
+            width: 100%;
+            max-width: 418px;
+            background-color: var(--bg-app);
+            height: 100%;
+            max-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            box-shadow: 0 30px 70px -15px rgba(0, 0, 0, 0.7);
+        }
+
+        @media (min-width: 500px) {
+            .app-shell {
+                border-radius: 44px;
+                overflow: hidden;
+                border: 9px solid #1e293b;
+                height: min(94vh, 835px);
+                max-height: 835px;
+            }
+        }
+
+        /* Top Notch / Dynamic Island Bar */
+        .phone-notch-bar {
+            padding: 10px 20px 4px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--text-title);
+            background: #ffffff;
+            flex-shrink: 0;
+        }
+
+        .notch-center-pill {
+            width: 72px;
+            height: 16px;
+            background: #0f172a;
+            border-radius: 20px;
+        }
+
+        /* App Brand Header */
+        .app-header {
+            background: #ffffff;
+            padding: 6px 16px 10px 16px;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            flex-shrink: 0;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-back-btn {
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            padding: 4px;
+            border-radius: 50%;
+            transition: background 0.15s ease;
+        }
+        .header-back-btn:hover {
+            background: var(--border-subtle);
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .brand-logo-icon {
+            width: 22px;
+            height: 22px;
+            color: var(--c-primary);
+        }
+
+        .brand-titles {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-name {
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: var(--text-title);
+            line-height: 1.1;
+        }
+
+        .brand-tagline {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .header-action-btn {
+            color: var(--text-muted);
+            padding: 6px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.15s ease;
+        }
+        .header-action-btn:hover {
+            background: var(--border-subtle);
+        }
+
+        .header-subline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.72rem;
+            padding-top: 2px;
+        }
+
+        .conn-pill {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--c-safe-text);
+            font-weight: 700;
+            background: var(--c-safe-bg);
+            padding: 2px 8px;
+            border-radius: 20px;
+            border: 1px solid var(--c-safe-border);
+        }
+        .conn-pill.disconnected {
+            color: var(--c-critical-text);
+            background: var(--c-critical-bg);
+            border-color: var(--c-critical-border);
+        }
+
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--c-safe);
+            animation: pulse-dot 2s infinite;
+        }
+        .status-dot.disconnected {
+            background: var(--c-critical);
+            animation: none;
+        }
+        @keyframes pulse-dot {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.3); opacity: 0.7; }
+        }
+
+        .session-info {
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.72rem;
+        }
+
+        /* Staleness Watchdog Banner (Section 0) */
+        #staleness-banner {
+            display: none;
+            background: #ef4444;
+            color: #ffffff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 5px 12px;
+            text-align: center;
+            animation: pulse-warn 1.5s infinite;
+            flex-shrink: 0;
+            z-index: 60;
+        }
+        @keyframes pulse-warn {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.85; }
+        }
+
+        /* ------------------------------------------------------------- */
+        /* MAIN SCROLLABLE VIEWPORT                                      */
+        /* ------------------------------------------------------------- */
+        .screens-viewport {
+            flex: 1;
+            min-height: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 10px 12px 76px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            scrollbar-width: none;
+        }
+        .screens-viewport::-webkit-scrollbar {
+            display: none;
+        }
+
+        .tab-screen {
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+            animation: fadeIn 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .tab-screen.active {
+            display: flex;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Reusable Card */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 12px 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .card-header-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-heading {
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* ------------------------------------------------------------- */
+        /* TAB 1: LIVE VIEW STYLING                                      */
+        /* ------------------------------------------------------------- */
+        .risk-alert-card {
+            border-radius: 16px;
+            padding: 12px 12px 10px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px solid var(--c-warning-border);
+            background: var(--c-warning-bg);
+            transition: all 0.2s ease;
+        }
+        .risk-alert-card.alert-safe {
+            background: var(--c-safe-bg);
+            border-color: var(--c-safe-border);
+        }
+        .risk-alert-card.alert-caution {
+            background: var(--c-caution-bg);
+            border-color: var(--c-caution-border);
+        }
+        .risk-alert-card.alert-warning {
+            background: var(--c-warning-bg);
+            border-color: var(--c-warning-border);
+        }
+        .risk-alert-card.alert-critical {
+            background: var(--c-critical-bg);
+            border-color: var(--c-critical-border);
+        }
+        .risk-alert-card.alert-degraded {
+            background: var(--c-degraded-bg);
+            border-color: var(--c-degraded-border);
+        }
+
+        .alert-top-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .alert-icon-wrap {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            flex-shrink: 0;
+        }
+
+        .alert-title-wrap {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .alert-state-title {
+            font-size: 1.12rem;
+            font-weight: 800;
+            letter-spacing: 0.01em;
+            line-height: 1.1;
+        }
+
+        .alert-state-sub {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            margin-top: 1px;
+        }
+
+        /* 3 Distinct Rounded White Metric Tiles */
+        .metrics-triplet {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
+            background: transparent;
+            padding: 0;
+            border: none;
+        }
+
+        .metric-cell {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 8px 4px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+            min-height: 74px;
+        }
+
+        .gauge-ring-wrap {
+            width: 44px;
+            height: 44px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gauge-ring-wrap svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: rotate(-90deg);
+        }
+
+        .gauge-number {
+            font-size: 0.88rem;
+            font-weight: 800;
+            color: var(--text-title);
+            z-index: 2;
+        }
+
+        .metric-big-num {
+            font-size: 1.22rem;
+            font-weight: 800;
+            color: var(--text-title);
+            line-height: 1.1;
+        }
+
+        .metric-tag {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            font-weight: 700;
+            margin-top: 3px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        /* Live Camera Feed Card */
+        .camera-feed-card {
+            background: #ffffff;
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+
+        .video-viewport {
+            width: 100%;
+            height: 224px;
+            background: #080c14;
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .video-frame-embed {
+            width: 100%;
+            height: 100%;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .video-frame-embed.fit-cover {
+            object-fit: cover;
+        }
+
+        .video-overlay-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .video-controls-bar {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            z-index: 10;
+            display: flex;
+            gap: 5px;
+        }
+
+        .vdo-pill-badge {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            color: #ffffff;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.15s ease;
+        }
+        .vdo-pill-badge:hover {
+            background: rgba(15, 23, 42, 0.95);
+        }
+
+        /* 3 Corridor Risk Boxes */
+        .corridor-triad {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
+        }
+
+        .corridor-box {
+            border-radius: 12px;
+            padding: 8px 4px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+            border: 1px solid var(--border-light);
+            background: #f8fafc;
+            transition: all 0.2s ease;
+        }
+
+        .corridor-box.safe {
+            background: var(--c-safe-bg);
+            border-color: var(--c-safe-border);
+            color: var(--c-safe-text);
+        }
+
+        .corridor-box.caution {
+            background: var(--c-caution-bg);
+            border-color: var(--c-caution-border);
+            color: var(--c-caution-text);
+        }
+
+        .corridor-box.risky {
+            background: var(--c-critical-bg);
+            border-color: var(--c-critical-border);
+            color: var(--c-critical-text);
+        }
+
+        .corridor-name {
+            font-size: 0.72rem;
+            font-weight: 700;
+            opacity: 0.85;
+        }
+
+        .corridor-score {
+            font-size: 1.15rem;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .corridor-status-tag {
+            font-size: 0.65rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-top: 1px;
+        }
+
+        /* Recommended Direction Banner */
+        .recommendation-card {
+            background: #ffffff;
+            border: 1.5px solid var(--c-safe-border);
+            border-radius: 16px;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            box-shadow: 0 2px 8px rgba(16, 185, 129, 0.08);
+        }
+
+        .rec-arrow-box {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: var(--c-safe-bg);
+            color: var(--c-safe);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .rec-texts {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rec-label-sub {
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .rec-command {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--c-safe-text);
+            line-height: 1.1;
+            margin: 1px 0;
+        }
+
+        .rec-explanation {
+            font-size: 0.74rem;
+            color: #059669;
+            font-weight: 500;
+        }
+
+        /* ------------------------------------------------------------- */
+        /* TAB 2: PREDICTION INSPECTOR                                   */
+        /* ------------------------------------------------------------- */
+        .inspector-selector-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 8px 12px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-title);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+        }
+
+        .insp-nav-arrow {
+            background: #f1f5f9;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: 800;
+            color: var(--text-muted);
+            transition: all 0.15s ease;
+        }
+        .insp-nav-arrow:hover {
+            background: #e2e8f0;
+            color: var(--text-title);
+        }
+
+        .predict-metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 6px;
+        }
+        .predict-metric-card {
+            background: #ffffff;
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 8px 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+        }
+        .p-metric-label {
+            font-size: 0.62rem;
+            font-weight: 800;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+        .p-metric-val {
+            font-size: 0.92rem;
+            font-weight: 800;
+            color: var(--text-title);
+            margin: 2px 0 1px 0;
+        }
+        .p-metric-sub {
+            font-size: 0.58rem;
+            color: var(--text-dim);
+            font-weight: 600;
+        }
+
+        .detail-table-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            font-size: 0.8rem;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .detail-table-row:last-child {
+            border-bottom: none;
+        }
+
+        .detail-key {
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .detail-val {
+            font-weight: 700;
+            color: var(--text-title);
+        }
+
+        .pill-badge {
+            font-size: 0.68rem;
+            padding: 2px 7px;
+            border-radius: 6px;
+            font-weight: 800;
+        }
+        .pill-badge.red {
+            background: var(--c-critical-bg);
+            color: var(--c-critical-text);
+            border: 1px solid var(--c-critical-border);
+        }
+        .pill-badge.green {
+            background: var(--c-safe-bg);
+            color: var(--c-safe-text);
+            border: 1px solid var(--c-safe-border);
+        }
+        .pill-badge.orange {
+            background: var(--c-warning-bg);
+            color: var(--c-warning-text);
+            border: 1px solid var(--c-warning-border);
+        }
+        .pill-badge.yellow {
+            background: #fefce8;
+            color: #854d0e;
+            border: 1px solid #fef08a;
+        }
+
+        .reasoning-list {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 0.75rem;
+            color: var(--text-body);
+            line-height: 1.4;
+        }
+        .reasoning-item {
+            display: flex;
+            gap: 8px;
+        }
+        .reasoning-num {
+            font-weight: 700;
+            color: var(--c-primary);
+        }
+
+        /* ------------------------------------------------------------- */
+        /* TAB 3: HAPTIC STATE & CHEST HARNESS                          */
+        /* ------------------------------------------------------------- */
+        .segmented-switcher {
+            display: flex;
+            background: #e2e8f0;
+            border-radius: 10px;
+            padding: 2px;
+            gap: 2px;
+        }
+        .segment-btn {
+            flex: 1;
+            padding: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.15s ease;
+        }
+        .segment-btn.active {
+            background: #ffffff;
+            color: var(--text-title);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .chest-harness-display {
+            width: 100%;
+            height: 184px;
+            background: #f8fafc;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border: 1px solid var(--border-light);
+        }
+
+        .harness-svg {
+            width: 170px;
+            height: 170px;
+        }
+
+        .motor-node-circle {
+            transition: all 0.2s ease;
+        }
+        .motor-node-circle.vibrating {
+            animation: pulse-ring 0.45s infinite;
+        }
+        @keyframes pulse-ring {
+            0% { r: 14; opacity: 1; }
+            100% { r: 28; opacity: 0; }
+        }
+
+        /* ------------------------------------------------------------- */
+        /* TAB 4: TEST & REPLAY                                          */
+        /* ------------------------------------------------------------- */
+        .scenario-chips-row {
+            display: flex;
+            gap: 6px;
+            overflow-x: auto;
+            padding-bottom: 2px;
+            scrollbar-width: none;
+        }
+        .scenario-chips-row::-webkit-scrollbar {
+            display: none;
+        }
+        .scenario-chip {
+            padding: 5px 10px;
+            background: #ffffff;
+            border: 1px solid var(--border-light);
+            border-radius: 20px;
+            font-size: 0.70rem;
+            font-weight: 700;
+            color: var(--text-body);
+            white-space: nowrap;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+            flex-shrink: 0;
+        }
+        .scenario-chip:hover {
+            border-color: var(--c-primary);
+            color: var(--c-primary);
+            background: var(--c-primary-light);
+        }
+
+        .scenario-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 12px;
+            background: #ffffff;
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        }
+        .scenario-card:hover {
+            border-color: #cbd5e1;
+            transform: translateY(-1px);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+        }
+        .scenario-icon-wrap {
+            width: 34px;
+            height: 34px;
+            background: #f1f5f9;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+        .scenario-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            flex: 1;
+            margin: 0 10px;
+        }
+        .scenario-title {
+            font-size: 0.82rem;
+            font-weight: 800;
+            color: var(--text-title);
+        }
+        .scenario-sub {
+            font-size: 0.68rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .test-scenario-dropdown {
+            width: 100%;
+            padding: 8px 12px;
+            border-radius: 10px;
+            border: 1px solid var(--border-light);
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-title);
+            background: #ffffff;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+        }
+
+        .replay-btn-row {
+            display: flex;
+            gap: 8px;
+        }
+        .btn-action {
+            flex: 1;
+            padding: 8px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            border-radius: 8px;
+            border: 1px solid var(--border-light);
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            transition: background 0.15s ease;
+        }
+        .btn-action:hover {
+            background: var(--border-subtle);
+        }
+        .btn-action.primary {
+            background: var(--c-primary);
+            color: #ffffff;
+            border-color: var(--c-primary);
+        }
+        .btn-action.primary:hover {
+            background: #1d4ed8;
+        }
+
+        .timeline-chart-box {
+            width: 100%;
+            height: 90px;
+            background: #ffffff;
+            border-radius: 8px;
+            position: relative;
+            border: 1px solid var(--border-light);
+        }
+
+        /* ------------------------------------------------------------- */
+        /* TAB 5: SOCIAL ASSIST                                          */
+        /* ------------------------------------------------------------- */
+        .toggle-switch-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .toggle-switch {
+            width: 44px;
+            height: 24px;
+            background: var(--c-primary);
+            border-radius: 12px;
+            position: relative;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+        .toggle-knob {
+            width: 20px;
+            height: 20px;
+            background: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .contact-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 12px;
+            background: #ffffff;
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .contact-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+        }
+        .contact-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--c-primary-light);
+            color: var(--c-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            font-weight: 800;
+            flex-shrink: 0;
+            border: 1px solid #bfdbfe;
+            overflow: hidden;
+        }
+        .contact-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            flex: 1;
+            margin: 0 10px;
+        }
+        .contact-name {
+            font-size: 0.84rem;
+            font-weight: 800;
+            color: var(--text-title);
+        }
+        .contact-status {
+            font-size: 0.68rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .demo-state-chip {
+            padding: 5px 9px;
+            background: #f1f5f9;
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .demo-state-chip.active {
+            background: #eff6ff;
+            border-color: var(--c-primary);
+            color: var(--c-primary);
+            font-weight: 800;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 8px 0;
+        }
+        .photo-thumb {
+            width: 100%;
+            height: 72px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 1px solid var(--border-light);
+        }
+        .photo-add-btn {
+            height: 72px;
+            border: 2px dashed #cbd5e1;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.68rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            background: #f8fafc;
+            transition: all 0.15s ease;
+        }
+        .photo-add-btn:hover {
+            border-color: var(--c-primary);
+            color: var(--c-primary);
+            background: #eff6ff;
+        }
+
+        /* ------------------------------------------------------------- */
+        /* BOTTOM NAVIGATION BAR (Fixed inside mobile viewport)          */
+        /* ------------------------------------------------------------- */
+        .bottom-nav-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-top: 1px solid var(--border-light);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 8px 4px 14px 4px;
+            z-index: 50;
+            flex-shrink: 0;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3px;
+            color: var(--text-muted);
+            width: 58px;
+            padding: 2px 0;
+            transition: transform 0.1s ease, color 0.15s ease;
+        }
+        .nav-item:active {
+            transform: scale(0.92);
+        }
+
+        .nav-item.active {
+            color: var(--c-primary);
+        }
+
+        .nav-icon-svg {
+            width: 21px;
+            height: 21px;
+        }
+
+        .nav-label {
+            font-size: 0.68rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        /* Settings Modal */
+        .modal-overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            z-index: 100;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .modal-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.25);
+        }
+        .input-text {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid var(--border-light);
+            border-radius: 10px;
+            font-size: 0.85rem;
+            outline: none;
+        }
+        .metric-subtag {
+            font-size: 0.58rem;
+            color: var(--text-dim);
+            font-weight: 600;
+            margin-top: 1px;
+            letter-spacing: -0.2px;
+        }
+
+        .obstacle-spotlight-box {
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid var(--border-light);
+            border-radius: 10px;
+            padding: 7px 10px;
+            margin-top: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.74rem;
+            font-weight: 700;
+            color: var(--text-title);
+            transition: all 0.2s ease;
+        }
+
+        .setting-field-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .setting-field-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .source-quick-chips {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .source-chip {
+            padding: 5px 10px;
+            background: #f1f5f9;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .source-chip:hover {
+            background: #e2e8f0;
+        }
+        .source-chip.active {
+            background: var(--c-primary-light);
+            border-color: var(--c-primary);
+            color: var(--c-primary);
+        }
+
+        .info-section-item {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            padding: 8px 10px;
+            background: #f8fafc;
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+        }
+        .info-item-title {
+            font-size: 0.72rem;
+            font-weight: 800;
+            color: var(--text-title);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .info-item-desc {
+            font-size: 0.70rem;
+            color: var(--text-muted);
+            line-height: 1.35;
+        }
+
+        .insp-sel-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            flex: 1;
+            min-width: 0;
+            flex-wrap: wrap;
+        }
+
+        .wizard-steps {
+            display: flex;
+            gap: 6px;
+        }
+        .wizard-dot {
+            flex: 1;
+            text-align: center;
+            font-size: 0.68rem;
+            font-weight: 800;
+            color: var(--text-muted);
+            background: #f1f5f9;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            padding: 6px 4px;
+        }
+        .wizard-dot.active {
+            background: var(--c-primary-light);
+            border-color: var(--c-primary);
+            color: var(--c-primary);
+        }
+        .wizard-dot.done {
+            background: var(--c-safe-bg);
+            border-color: var(--c-safe-border);
+            color: var(--c-safe-text);
+        }
+        .wizard-pane {
+            display: none;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .wizard-pane.active {
+            display: flex;
+        }
+
+        .contacts-empty {
+            text-align: center;
+            padding: 18px 10px;
+            color: var(--text-muted);
+            font-size: 0.78rem;
+            font-weight: 600;
+            background: #f8fafc;
+            border: 1px dashed var(--border-light);
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-shell">
+
+        <!-- Top Phone Status Header -->
+        <div class="phone-notch-bar mono">
+            <span id="notch-clock">--:--</span>
+            <div class="notch-center-pill"></div>
+            <div style="display:flex; gap:6px; align-items:center;">
+                <span>WiFi</span>
+            </div>
+        </div>
+
+        <!-- App Brand Header -->
+        <header class="app-header">
+            <div class="header-top">
+                <button class="header-back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <div class="header-brand">
+                    <svg class="brand-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    <div class="brand-titles">
+                        <span class="brand-name">SpatialVector-HMI</span>
+                        <span class="brand-tagline">Spatial Vision & Hazard Avoidance</span>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button id="btn-open-info" class="header-action-btn" title="System Information">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                    </button>
+                    <button id="btn-open-settings" class="header-action-btn" title="Camera Settings">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="header-subline">
+                <div id="conn-pill-badge" class="conn-pill disconnected">
+                    <span id="conn-status-dot" class="status-dot disconnected"></span>
+                    <span id="conn-status-text">Waiting for Edge Pipeline...</span>
+                </div>
+                <div class="session-info mono">
+                    <span id="session-id-label">Active Session: Local</span>
+                    <span id="header-clock" style="margin-left: 8px;">00:00:00</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Client-Side Staleness Watchdog Alert Banner -->
+        <div id="staleness-banner">
+            ⚠️ PIPELINE OFFLINE — Waiting for telemetry connection...
+        </div>
+
+        <!-- Main Viewport containing the 5 screens -->
+        <div class="screens-viewport">
+
+            <!-- ======================================================== -->
+            <!-- 1. HOME VIEW TAB (Formerly Live)                         -->
+            <!-- ======================================================== -->
+            <div id="screen-live" class="tab-screen active">
+
+                <!-- 1. Primary Risk Warning Alert Banner -->
+                <div id="risk-alert-card" class="risk-alert-card alert-safe">
+                    <div class="alert-top-row">
+                        <div class="alert-icon-wrap" id="alert-icon-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <div class="alert-title-wrap">
+                            <span id="alert-state-name" class="alert-state-title" style="color: #065f46;">STANDBY</span>
+                            <span id="alert-state-sub" class="alert-state-sub">Waiting for telemetry pipeline</span>
+                        </div>
+                    </div>
+
+                    <!-- Dedicated Obstacle Spotlight Display -->
+                    <div id="obstacle-spotlight-box" class="obstacle-spotlight-box">
+                        <span id="obstacle-spotlight-icon">🟢</span>
+                        <span id="obstacle-spotlight-text">Path Clear · No immediate obstacles detected</span>
+                    </div>
+
+                    <!-- 3 Metric Tiles with Clear Explanations -->
+                    <div class="metrics-triplet">
+                        <div class="metric-cell">
+                            <div class="gauge-ring-wrap">
+                                <svg width="44" height="44" viewBox="0 0 36 36">
+                                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#f1f5f9" stroke-width="3.5" />
+                                    <path id="gauge-circle-stroke" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#10b981" stroke-dasharray="0, 100" stroke-linecap="round" stroke-width="3.5" />
+                                </svg>
+                                <span id="val-risk-score" class="gauge-number mono">—</span>
+                            </div>
+                            <span class="metric-tag">Risk Level</span>
+                            <span class="metric-subtag">Hazard Index (0-1)</span>
+                        </div>
+                        <div class="metric-cell">
+                            <span id="val-ttc" class="metric-big-num mono">—</span>
+                            <span class="metric-tag">Est. Contact</span>
+                            <span class="metric-subtag">TTC (seconds)</span>
+                        </div>
+                        <div class="metric-cell">
+                            <span id="val-cpa" class="metric-big-num mono">—</span>
+                            <span class="metric-tag">Pass Margin</span>
+                            <span class="metric-subtag">CPA (meters)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Live Camera View with Clean Controls -->
+                <div class="camera-feed-card">
+                    <div class="card-header-line">
+                        <span class="card-heading">Home View (Camera)</span>
+                        <span id="camera-stream-badge" class="vdo-pill-badge mono" style="background:#f1f5f9; color:#64748b; border:1px solid #cbd5e1;">○ NO SIGNAL</span>
+                    </div>
+
+                    <div class="video-viewport">
+                        <!-- Primary: MJPEG stream from local backend /api/video -->
+                        <img id="mjpeg-video-stream" class="video-frame-embed fit-cover"
+                             src="/api/video"
+                             alt="Live Camera Feed"
+                             style="display:block; width:100%; height:100%; object-fit:cover; background:#000;"
+                             onerror="this.style.display='none'; document.getElementById('vdo-ninja-frame').style.display='block';"
+                        >
+                        <!-- Fallback: VDO.Ninja iframe (used if /api/video unavailable) -->
+                        <iframe id="vdo-ninja-frame" class="video-frame-embed fit-cover" src="about:blank" allow="autoplay; camera; microphone; display-capture; fullscreen" allowfullscreen referrerpolicy="no-referrer-when-downgrade" style="display:none;"></iframe>
+                        <!-- HUD & Vector overlays -->
+                        <canvas id="live-overlay-canvas" class="video-overlay-canvas" width="400" height="224"></canvas>
+                        
+                        <div class="video-controls-bar">
+                            <button id="btn-toggle-hud" class="vdo-pill-badge" onclick="toggleHudOverlay()" title="Toggle AR HUD Lines">
+                                <span>HUD: ON</span>
+                            </button>
+                            <button id="btn-toggle-aspect" class="vdo-pill-badge" onclick="toggleVideoAspect()" title="Toggle Fit/Fill">
+                                <span>Fill</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 3 Corridor Risk Boxes -->
+                    <div class="corridor-triad">
+                        <div id="box-corr-left" class="corridor-box">
+                            <span class="corridor-name">Left</span>
+                            <span id="txt-corr-left" class="corridor-score mono">—</span>
+                            <span id="lbl-corr-left" class="corridor-status-tag">STANDBY</span>
+                        </div>
+                        <div id="box-corr-center" class="corridor-box">
+                            <span class="corridor-name">Center</span>
+                            <span id="txt-corr-center" class="corridor-score mono">—</span>
+                            <span id="lbl-corr-center" class="corridor-status-tag">STANDBY</span>
+                        </div>
+                        <div id="box-corr-right" class="corridor-box">
+                            <span class="corridor-name">Right</span>
+                            <span id="txt-corr-right" class="corridor-score mono">—</span>
+                            <span id="lbl-corr-right" class="corridor-status-tag">STANDBY</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Recommended Direction Banner -->
+                <div class="recommendation-card">
+                    <div id="rec-arrow-icon" class="rec-arrow-box">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                    </div>
+                    <div class="rec-texts">
+                        <span class="rec-label-sub">Recommended Direction</span>
+                        <span id="rec-dir-name" class="rec-command">STANDBY</span>
+                        <span id="rec-dir-sub" class="rec-explanation">Waiting for path analysis</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ======================================================== -->
+            <!-- 2. PREDICTION INSPECTOR TAB                              -->
+            <!-- ======================================================== -->
+            <div id="screen-predict" class="tab-screen">
+                
+                <!-- Screen Header & Subtitle -->
+                <div class="card-header-line" style="margin-bottom:2px;">
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:800; color:var(--text-title);">Trajectory Prediction</h2>
+                        <span style="font-size:0.72rem; color:var(--text-muted);">Real-time motion analysis & risk projection</span>
+                    </div>
+                    <span id="insp-header-badge" class="vdo-pill-badge" style="background:#eff6ff; color:#2563eb; border:1px solid #bfdbfe;">● Active</span>
+                </div>
+
+                <!-- Selected Object Bar (< 🛵 Scooter #2 CRITICAL >) -->
+                <div class="inspector-selector-bar">
+                    <button id="btn-insp-prev" onclick="prevTrack()" class="insp-nav-arrow" aria-label="Previous Track">&lt;</button>
+                    <div class="insp-sel-center">
+                        <span id="insp-obj-icon" style="font-size:1.15rem;">🟢</span>
+                        <span id="inspector-obj-label" style="font-weight:800;">No Track Selected</span>
+                        <span id="insp-risk-badge" class="pill-badge green">SAFE</span>
+                    </div>
+                    <button id="btn-insp-next" onclick="nextTrack()" class="insp-nav-arrow" aria-label="Next Track">&gt;</button>
+                </div>
+
+                <!-- View Switcher Tabs -->
+                <div class="segmented-switcher" id="predict-segmented" style="margin-top:2px;">
+                    <button class="segment-btn active" id="btn-pred-2d" onclick="switchPredictView('2d')">2D View</button>
+                    <button class="segment-btn" id="btn-pred-top" onclick="switchPredictView('top')">Top View</button>
+                    <button class="segment-btn" id="btn-pred-timeline" onclick="switchPredictView('timeline')">Timeline</button>
+                </div>
+
+                <!-- Main Trajectory Visualization Hero -->
+                <div class="card" id="card-pred-main-view" style="padding:10px;">
+                    <!-- Interactive Top View Controls Toolbar -->
+                    <div id="topview-toolbar" style="display:none; justify-content:space-between; align-items:center; margin-bottom:6px; flex-wrap:wrap; gap:6px;">
+                        <!-- Filter Pills -->
+                        <div style="display:flex; gap:4px;">
+                            <button id="topview-filter-all" onclick="setTopViewFilter('all')" class="vdo-pill-badge" style="background:#2563eb; color:#ffffff; border-color:#3b82f6;">All</button>
+                            <button id="topview-filter-selected" onclick="setTopViewFilter('selected')" class="vdo-pill-badge">Selected</button>
+                            <button id="topview-filter-risk" onclick="setTopViewFilter('risk')" class="vdo-pill-badge">High Risk</button>
+                        </div>
+                        <!-- Zoom & AutoScale Controls -->
+                        <div style="display:flex; gap:4px; align-items:center;">
+                            <button onclick="zoomTopView(0.2)" class="vdo-pill-badge" title="Zoom In">+</button>
+                            <button onclick="zoomTopView(-0.2)" class="vdo-pill-badge" title="Zoom Out">−</button>
+                            <button onclick="resetTopViewZoom()" class="vdo-pill-badge" title="Reset View">Reset</button>
+                            <button id="btn-autoscale" onclick="toggleTopViewAutoScale()" class="vdo-pill-badge" style="background:rgba(16, 185, 129, 0.2); color:#10b981; border-color:#10b981;">Auto Scale: ON</button>
+                        </div>
+                    </div>
+
+                    <div class="video-viewport" style="height: 250px; background: #0b1329; border-radius:12px; position:relative; overflow:hidden;">
+                        <canvas id="inspector-canvas" width="400" height="250" style="width:100%; height:100%; cursor:pointer;"></canvas>
+                    </div>
+
+                    <!-- Time Scrubbing Controls for Trajectory Inspection -->
+                    <div id="topview-time-scrubber" style="display:none; align-items:center; gap:8px; margin-top:8px; background:#0f172a; padding:6px 10px; border-radius:8px; border:1px solid #1e293b;">
+                        <span class="mono" style="font-size:0.68rem; color:#94a3b8; font-weight:700; width:45px;">TIME: <span id="scrubber-val" style="color:#60a5fa;">NOW</span></span>
+                        <input type="range" id="topview-scrubber-input" min="0" max="5.0" step="0.2" value="0" style="flex:1; accent-color:#3b82f6; cursor:pointer;" oninput="onTopViewScrub(this.value)" />
+                        <button onclick="resetTopViewScrub()" class="vdo-pill-badge" style="font-size:0.60rem; padding:2px 6px;">LIVE</button>
+                    </div>
+                </div>
+
+                <!-- Risk Over Time Visualization (Timeline tab) -->
+                <div class="card" id="card-risk-timeline" style="padding:10px 12px; display:none;">
+                    <div class="card-header-line">
+                        <span class="card-heading">Risk Over Time</span>
+                        <span id="risk-timeline-val" class="detail-val mono" style="font-size:0.75rem; color:#ef4444;">● 2.1s (Hazard)</span>
+                    </div>
+                    <div style="height: 72px; width:100%; position:relative; margin-top:4px;">
+                        <canvas id="predict-risk-timeline-canvas" width="380" height="72" style="width:100%; height:100%;"></canvas>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; font-size:0.60rem; color:var(--text-dim); margin-top:2px;" class="mono">
+                        <span>NOW (0.0s)</span>
+                        <span>1.5s</span>
+                        <span>3.0s</span>
+                        <span>4.5s</span>
+                        <span>SAFE (6.0s+)</span>
+                    </div>
+                </div>
+
+                <!-- Key Metrics 4-Card Grid -->
+                <div class="predict-metrics-grid">
+                    <div class="predict-metric-card">
+                        <span class="p-metric-label">TTC</span>
+                        <span id="insp-ttc" class="p-metric-val mono">None</span>
+                        <span id="insp-ttc-sub" class="p-metric-sub">Time to contact</span>
+                    </div>
+                    <div class="predict-metric-card">
+                        <span class="p-metric-label">CPA</span>
+                        <span id="insp-cpa" class="p-metric-val mono">--</span>
+                        <span id="insp-cpa-sub" class="p-metric-sub">Closest margin</span>
+                    </div>
+                    <div class="predict-metric-card">
+                        <span class="p-metric-label">Intersection</span>
+                        <span id="insp-intersect" class="pill-badge green" style="font-size:0.75rem; margin:2px 0;">NO</span>
+                        <span id="insp-intersect-sub" class="p-metric-sub">Path collision</span>
+                    </div>
+                    <div class="predict-metric-card">
+                        <span class="p-metric-label">Confidence</span>
+                        <span id="insp-pred-conf" class="p-metric-val mono">—</span>
+                        <span class="p-metric-sub">Model accuracy</span>
+                    </div>
+                </div>
+
+                <!-- View Reasoning Button & Expandable Drawer -->
+                <div class="card" style="padding:10px 14px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; cursor:pointer;" onclick="toggleReasoningPanel()">
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <span style="font-size:0.95rem;">🧠</span>
+                            <span style="font-size:0.82rem; font-weight:800; color:var(--text-title);">View Detailed Reasoning</span>
+                        </div>
+                        <span id="reasoning-accordion-chevron" style="font-size:0.85rem; font-weight:800; color:var(--c-primary); transition:transform 0.2s ease;">▼</span>
+                    </div>
+
+                    <!-- Collapsible Reasoning Panel -->
+                    <div id="reasoning-accordion-panel" style="display:none; flex-direction:column; gap:10px; margin-top:10px; border-top:1px solid var(--border-subtle); padding-top:10px;">
+                        
+                        <div>
+                            <span class="card-heading" style="margin-bottom:4px; display:block;">1. Risk Factors & Logic</span>
+                            <div id="inspector-reasoning-list" class="reasoning-list">
+                                <div class="reasoning-item"><span>No active risk factors for this track.</span></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="card-heading" style="margin-bottom:4px; display:block;">2. Motion & Velocity Profile</span>
+                            <div class="detail-table-row"><span class="detail-key">Relative Velocity</span><span id="insp-vel" class="detail-val mono">— px/s</span></div>
+                            <div class="detail-table-row"><span class="detail-key">Track Confidence</span><span id="insp-track-conf" class="detail-val mono">—</span></div>
+                            <div class="detail-table-row"><span class="detail-key">Risk Evaluation</span><span id="insp-state" class="pill-badge green">IDLE</span></div>
+                        </div>
+
+                        <div>
+                            <span class="card-heading" style="margin-bottom:4px; display:block;">3. Track & Sensor Metadata</span>
+                            <div class="detail-table-row"><span class="detail-key">Track ID</span><span id="insp-id" class="detail-val mono">—</span></div>
+                            <div class="detail-table-row"><span class="detail-key">Class Name</span><span id="insp-class" class="detail-val">None</span></div>
+                            <div class="detail-table-row"><span class="detail-key">Prediction Model</span><span class="detail-val mono" style="font-size:0.75rem;">Linear + Kalman Extrapolator</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ======================================================== -->
+            <!-- 3. HAPTIC STATE TAB                                      -->
+            <!-- ======================================================== -->
+            <div id="screen-haptics" class="tab-screen">
+                
+                <div class="card-header-line">
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:800; color:var(--text-title);">Haptic State</h2>
+                        <span style="font-size:0.72rem; color:var(--text-muted);">Real-time haptic feedback status</span>
+                    </div>
+                    <span class="vdo-pill-badge" style="background:#ecfdf5; color:#065f46; border:1px solid #a7f3d0;">● Live</span>
+                </div>
+
+                <div class="segmented-switcher" id="haptics-segmented">
+                    <button class="segment-btn active" id="btn-seg-device" onclick="switchHapticView('device')">Device View</button>
+                    <button class="segment-btn" id="btn-seg-commands" onclick="switchHapticView('commands')">Recent Commands</button>
+                </div>
+
+                <div id="haptics-device-view">
+                    <!-- Chest Harness Graphic with 3D Human Vest Overlay (2 Motors: Left Pin 5, Right Pin 6) -->
+                    <div class="chest-harness-display" style="position:relative; overflow:hidden; background:#f8fafc;">
+                        <img src="haptic_vest_3d.jpg" alt="3D Human Haptic Vest" style="position:absolute; width:100%; height:100%; object-fit:contain; opacity:0.85; z-index:1;" />
+                        <svg class="harness-svg" viewBox="0 0 200 200" style="position:relative; z-index:2;">
+                            <!-- Edge Processing Unit Tag -->
+                            <rect x="80" y="55" width="40" height="24" rx="4" fill="rgba(15, 23, 42, 0.85)" stroke="#60a5fa" stroke-width="1.5" />
+                            <text x="100" y="70" font-size="8" font-weight="800" fill="#ffffff" text-anchor="middle">ARDUINO</text>
+                            
+                            <!-- Left Vibro-Motor (Pin 5) -->
+                            <circle id="svg-motor-left" cx="55" cy="125" r="16" fill="rgba(239, 246, 255, 0.9)" stroke="#3b82f6" stroke-width="3" />
+                            <circle id="svg-ripple-left" cx="55" cy="125" r="16" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0" class="motor-node-circle" />
+                            <text id="svg-lbl-left" x="55" y="156" font-size="9" font-weight="800" fill="#1d4ed8" text-anchor="middle">LEFT (P5)</text>
+
+                            <!-- Right Vibro-Motor (Pin 6) -->
+                            <circle id="svg-motor-right" cx="145" cy="125" r="16" fill="rgba(248, 250, 252, 0.9)" stroke="#94a3b8" stroke-width="2.5" />
+                            <circle id="svg-ripple-right" cx="145" cy="125" r="16" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0" class="motor-node-circle" />
+                            <text id="svg-lbl-right" x="145" y="156" font-size="9" font-weight="800" fill="#475569" text-anchor="middle">RIGHT (P6)</text>
+                        </svg>
+                    </div>
+
+                    <!-- Current Haptic Command -->
+                    <div class="card" style="margin-top:10px;">
+                        <span class="card-heading">Current Haptic Command</span>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <div style="display:flex; align-items:center; gap:10px;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5">
+                                    <path d="M2 12h3l3-9 4 18 3-9h3l2-3"></path>
+                                </svg>
+                                <span id="haptic-pat-label" style="font-size:1.05rem; font-weight:800; color:var(--text-title);">LEFT_FAST</span>
+                            </div>
+                            <span id="haptic-vib-badge" class="pill-badge" style="background:#eff6ff; color:#2563eb; border:1px solid #bfdbfe;">● Vibrating</span>
+                        </div>
+
+                        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:6px; margin-top:4px;">
+                            <div class="corridor-box"><span class="corridor-name">Urgency</span><span id="haptic-urg-val" class="corridor-score mono" style="font-size:0.95rem;">1/5</span></div>
+                            <div class="corridor-box"><span class="corridor-name">Duration</span><span id="haptic-dur-val" class="corridor-score mono" style="font-size:0.95rem;">320 ms</span></div>
+                            <div class="corridor-box"><span class="corridor-name">Last Cmd</span><span id="haptic-time-val" class="corridor-score mono" style="font-size:0.8rem;">09:41:22</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Device Status -->
+                    <div class="card" style="margin-top:10px;">
+                        <span class="card-heading">Hardware & Device Status</span>
+                        <div class="detail-table-row"><span class="detail-key">Arduino Microcontroller</span><span id="dev-ard-status" class="pill-badge green">● Connected</span></div>
+                        <div class="detail-table-row"><span class="detail-key">Pipeline Latency</span><span id="dev-latency-val" class="detail-val mono">32 ms</span></div>
+                        <div class="detail-table-row"><span class="detail-key">Hardware Watchdog</span><span class="pill-badge green">● Active</span></div>
+                        <div class="detail-table-row"><span class="detail-key">Left Motor (Pin 5)</span><span id="dev-motor-l-status" class="pill-badge green">● ACTIVE</span></div>
+                        <div class="detail-table-row"><span class="detail-key">Right Motor (Pin 6)</span><span id="dev-motor-r-status" class="detail-val" style="color:var(--text-muted);">○ Idle</span></div>
+                        <div class="detail-table-row"><span class="detail-key">Power Source</span><span class="detail-val mono" style="font-size:0.75rem; color:#059669; font-weight:700;">Direct PowerBank (5V USB)</span></div>
+                    </div>
+
+                    <!-- Haptic Language Guide -->
+                    <div class="card" style="margin-top:10px;">
+                        <span class="card-heading">2-Motor Guidance Language</span>
+                        <div style="font-size:0.75rem; color:var(--text-body); line-height:1.4;">
+                            <div><strong>Direction Guidance:</strong> Left motor pulses for leftward cue / hazard on left. Right motor pulses for rightward cue.</div>
+                            <div style="margin-top:4px;"><strong>Emergency Stop:</strong> Both motors vibrate simultaneously at highest frequency.</div>
+                            <div style="margin-top:4px;"><strong>Intensity Scale:</strong> Urgency 1 (gentle pulse) up to Urgency 5 (rapid continuous buzz).</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="haptics-commands-view" style="display:none;">
+                    <div class="card">
+                        <span class="card-heading">Recent Commands Telemetry</span>
+                        <div id="haptic-commands-list" style="display:flex; flex-direction:column; gap:8px;">
+                            <div class="detail-table-row"><span class="detail-key mono">09:41:22</span><span class="detail-val">LEFT_FAST (320ms, urg 3)</span></div>
+                            <div class="detail-table-row"><span class="detail-key mono">09:41:20</span><span class="detail-val">LEFT_MEDIUM (240ms, urg 2)</span></div>
+                            <div class="detail-table-row"><span class="detail-key mono">09:41:18</span><span class="detail-val">ALL_CLEAR (200ms, urg 1)</span></div>
+                            <div class="detail-table-row"><span class="detail-key mono">09:41:15</span><span class="detail-val">ALL_CLEAR (200ms, urg 1)</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ======================================================== -->
+            <!-- 4. TEST SCENARIOS TAB                                    -->
+            <!-- ======================================================== -->
+            <div id="screen-test" class="tab-screen">
+                
+                <div class="card-header-line" style="margin-bottom:2px;">
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:800; color:var(--text-title);">Test Scenarios</h2>
+                        <span style="font-size:0.72rem; color:var(--text-muted);">Validate system behavior with controlled scenarios</span>
+                    </div>
+                    <span id="test-exec-status-badge" class="vdo-pill-badge" style="background:#f1f5f9; color:#475569;">● Ready</span>
+                </div>
+
+                <!-- Quick Test Chips -->
+                <div style="margin-top:2px;">
+                    <div style="font-size:0.68rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.4px; margin-bottom:4px;">Quick Test</div>
+                    <div class="scenario-chips-row">
+                        <button id="chip-scen-s1" class="scenario-chip" onclick="runQuickTest('s1')">S1</button>
+                        <button id="chip-scen-s2" class="scenario-chip" onclick="runQuickTest('s2')">S2</button>
+                        <button id="chip-scen-s3" class="scenario-chip" onclick="runQuickTest('s3')">S3</button>
+                        <button id="chip-scen-s4" class="scenario-chip" onclick="runQuickTest('s4')">S4</button>
+                        <button id="chip-scen-s5" class="scenario-chip" onclick="runQuickTest('s5')">S5</button>
+                        <button id="chip-scen-s6" class="scenario-chip" onclick="runQuickTest('s6')">S6</button>
+                    </div>
+                </div>
+
+                <!-- Scenario Card List -->
+                <div style="display:flex; flex-direction:column; gap:8px; margin-top:4px;">
+                    <div style="font-size:0.68rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.4px;">Predefined Scenarios</div>
+
+                    <div class="scenario-card" onclick="openScenarioDetail('s1')">
+                        <div class="scenario-icon-wrap">🚶</div>
+                        <div class="scenario-info">
+                            <span class="scenario-title">S1 — Parallel Wall</span>
+                            <span class="scenario-sub">Walk parallel to wall at close distance</span>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <span class="pill-badge green">SAFE</span>
+                            <span style="color:var(--text-dim); font-weight:800;">&gt;</span>
+                        </div>
+                    </div>
+
+                    <div class="scenario-card" onclick="openScenarioDetail('s2')">
+                        <div class="scenario-icon-wrap">🚶</div>
+                        <div class="scenario-info">
+                            <span class="scenario-title">S2 — Head-On Obstacle</span>
+                            <span class="scenario-sub">Approaching obstacle directly toward user</span>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <span class="pill-badge orange">WARNING</span>
+                            <span style="color:var(--text-dim); font-weight:800;">&gt;</span>
+                        </div>
+                    </div>
+
+                    <div class="scenario-card" onclick="openScenarioDetail('s3')">
+                        <div class="scenario-icon-wrap">🚶</div>
+                        <div class="scenario-info">
+                            <span class="scenario-title">S3 — Crossing Object</span>
+                            <span class="scenario-sub">Pedestrian crosses user predicted path</span>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <span class="pill-badge orange">WARNING</span>
+                            <span style="color:var(--text-dim); font-weight:800;">&gt;</span>
+                        </div>
+                    </div>
+
+                    <div class="scenario-card" onclick="openScenarioDetail('s4')">
+                        <div class="scenario-icon-wrap">🛵</div>
+                        <div class="scenario-info">
+                            <span class="scenario-title">S4 — Static Obstacle</span>
+                            <span class="scenario-sub">Stationary obstacle in walking corridor</span>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <span class="pill-badge green">SAFE</span>
+                            <span style="color:var(--text-dim); font-weight:800;">&gt;</span>
+                        </div>
+                    </div>
+
+                    <div class="scenario-card" onclick="openScenarioDetail('s5')">
+                        <div class="scenario-icon-wrap">👥</div>
+                        <div class="scenario-info">
+                            <span class="scenario-title">S5 — Multiple Obstacles</span>
+                            <span class="scenario-sub">Crowded scene with multi-track prioritization</span>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <span class="pill-badge red">CRITICAL</span>
+                            <span style="color:var(--text-dim); font-weight:800;">&gt;</span>
+                        </div>
+                    </div>
+
+                    <div class="scenario-card" onclick="openScenarioDetail('s6')">
+                        <div class="scenario-icon-wrap">↔</div>
+                        <div class="scenario-info">
+                            <span class="scenario-title">S6 — Narrow Corridor</span>
+                            <span class="scenario-sub">Tight walking corridor & spatial cues</span>
+                        </div>
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <span class="pill-badge green">SAFE</span>
+                            <span style="color:var(--text-dim); font-weight:800;">&gt;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Latest test result (shown after a run completes) -->
+                <div id="test-result-card" class="card" style="display:none; margin-top:4px; border-color:var(--c-safe-border); background:var(--c-safe-bg);">
+                    <div class="card-header-line">
+                        <span id="test-res-badge" class="pill-badge green">✔ PASS</span>
+                        <button type="button" class="btn-action" onclick="openLatestTestDetails()" style="flex:none; padding:5px 10px; font-size:0.72rem;">View Details</button>
+                    </div>
+                    <div class="detail-table-row"><span class="detail-key">Expected</span><span id="test-res-exp" class="detail-val mono">SAFE</span></div>
+                    <div class="detail-table-row"><span class="detail-key">Actual</span><span id="test-res-act" class="detail-val mono">SAFE</span></div>
+                </div>
+
+                <!-- Recent Tests History Card -->
+                <div class="card" style="margin-top:4px;">
+                    <div class="card-header-line">
+                        <span class="card-heading">Recent Test Runs</span>
+                        <button onclick="clearTestHistory()" style="font-size:0.68rem; color:var(--c-primary); font-weight:700; background:none; border:none; cursor:pointer;">Clear</button>
+                    </div>
+                    <div id="test-history-list" style="display:flex; flex-direction:column; gap:6px;">
+                        <div class="detail-table-row">
+                            <span style="font-size:0.75rem; font-weight:700;">✓ S1 Parallel Wall</span>
+                            <span class="pill-badge green">✔ PASS</span>
+                        </div>
+                        <div class="detail-table-row">
+                            <span style="font-size:0.75rem; font-weight:700;">✓ S2 Head-On Obstacle</span>
+                            <span class="pill-badge green">✔ PASS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backward compatibility elements for existing dashboard.js variables -->
+                <select id="select-test-scenario" style="display:none;" onchange="selectScenario(this.value)">
+                    <option value="s1">s1</option><option value="s2">s2</option><option value="s3">s3</option>
+                    <option value="s4">s4</option><option value="s5">s5</option><option value="s6">s6</option>
+                </select>
+                <div style="display:none;">
+                    <span id="scen-desc"></span><span id="scen-expected"></span>
+                    <span id="scen-actual"></span><span id="scen-result"></span>
+                    <span id="scen-frame-txt"></span>
+                    <input id="replay-slider" type="range" min="0" max="100" value="35">
+                    <button id="btn-replay-start" onclick="startReplay()"></button>
+                    <button id="btn-replay-pause" onclick="pauseReplay()"></button>
+                    <button id="btn-replay-reset" onclick="resetReplay()"></button>
+                </div>
+
+            </div>
+
+            <!-- ======================================================== -->
+            <!-- 5. SOCIAL ASSIST TAB                                     -->
+            <!-- ======================================================== -->
+            <div id="screen-social" class="tab-screen">
+                
+                <div class="toggle-switch-row">
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:800; color:var(--text-title);">Social Assist</h2>
+                        <span style="font-size:0.72rem; color:var(--text-muted);">Optional identity assistance · Does not affect safety</span>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <span id="social-switch-label" style="font-size:0.75rem; font-weight:700; color:var(--c-primary);">Enabled</span>
+                        <div class="toggle-switch" id="toggle-social-switch" onclick="toggleSocialAssist()">
+                            <div class="toggle-knob"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="segmented-switcher" id="social-segmented">
+                    <button class="segment-btn active" id="btn-seg-live-rec" onclick="switchSocialView('live')">Live Recognition</button>
+                    <button class="segment-btn" id="btn-seg-contacts" onclick="switchSocialView('contacts')">Known Contacts</button>
+                </div>
+
+                <div id="social-live-view">
+                    <!-- Live demo switcher -->
+                    <div style="display:flex; gap:6px; align-items:center; margin-bottom:2px;">
+                        <span style="font-size:0.68rem; font-weight:700; color:var(--text-muted); text-transform:uppercase;">Demo:</span>
+                        <button class="demo-state-chip active" id="chip-demo-known" onclick="setSocialDemoState('known')">Rahul (91%)</button>
+                        <button class="demo-state-chip" id="chip-demo-unknown" onclick="setSocialDemoState('unknown')">Unknown</button>
+                        <button class="demo-state-chip" id="chip-demo-possible" onclick="setSocialDemoState('possible')">Possible (64%)</button>
+                    </div>
+
+                    <!-- Camera recognition view -->
+                    <div class="card" style="padding:10px;">
+                        <div class="video-viewport" style="height: 180px; background: #1e293b; border-radius:12px; position:relative;">
+                            <div id="social-face-box" style="position:absolute; width:110px; height:130px; border:2px solid #10b981; border-radius:8px; display:flex; flex-direction:column; justify-content:space-between; padding:4px; top:25px; left:50%; transform:translateX(-50%); transition:all 0.2s ease;">
+                                <span id="social-face-tag-top" class="vdo-pill-badge" style="background:#10b981; font-size:0.6rem;">Person #4</span>
+                                <span id="social-face-tag-bottom" class="vdo-pill-badge" style="background:#10b981; font-size:0.6rem; align-self:flex-end;">Rahul (0.91)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Identity Card -->
+                    <div class="card" style="margin-top:4px;">
+                        <span class="card-heading">Identified Contact</span>
+                        <div class="detail-table-row"><span class="detail-key">Track ID</span><span id="soc-track-id" class="detail-val mono">#4</span></div>
+                        <div class="detail-table-row"><span class="detail-key">Detected Person</span><span id="soc-person-name" class="detail-val" style="font-weight:800; color:var(--c-primary);">Rahul</span></div>
+                        <div class="detail-table-row"><span class="detail-key">Relationship</span><span id="soc-relationship" class="detail-val">Friend</span></div>
+                        <div class="detail-table-row"><span class="detail-key">Confidence</span><span id="soc-conf" class="detail-val mono">91%</span></div>
+                        <div class="detail-table-row"><span class="detail-key">Recognition Status</span><span id="soc-status" class="pill-badge green">● Known</span></div>
+                    </div>
+                </div>
+
+                <div id="social-contacts-view" style="display:none;">
+                    <div class="card">
+                        <div class="card-header-line">
+                            <div>
+                                <span class="card-heading">Known Contacts</span>
+                                <div style="font-size:0.68rem; color:var(--text-muted); font-weight:500;">People added for optional spatial recognition</div>
+                            </div>
+                            <button class="btn-action primary" onclick="openAddFriendModal()" style="padding:5px 12px; font-size:0.75rem; flex:none;">+ Add Friend</button>
+                        </div>
+
+                        <!-- Contacts list rendered dynamically via JS -->
+                        <div id="contacts-list-container" style="display:flex; flex-direction:column; gap:6px; margin-top:4px;">
+                            <!-- Populated by renderContactsList() -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Privacy & Data Governance -->
+                <div class="card" style="margin-top:10px;">
+                    <span class="card-heading">Privacy & Data Governance</span>
+                    <div class="detail-table-row"><span class="detail-key">Local Edge Processing</span><span class="pill-badge green">✔ ON</span></div>
+                    <div class="detail-table-row"><span class="detail-key">Cloud Upload</span><span class="pill-badge red">✖ OFF</span></div>
+                    <div class="detail-table-row"><span class="detail-key">Raw Recording</span><span class="pill-badge red">✖ OFF</span></div>
+                    <div class="detail-table-row"><span class="detail-key">Face Recognition</span><span class="pill-badge green">✔ ON (Optional)</span></div>
+                    <div class="detail-table-row"><span class="detail-key">Telemetry Stream</span><span class="detail-val" style="color:var(--c-primary); font-size:0.75rem;">ℹ Metadata Only</span></div>
+                </div>
+
+                <!-- Privacy Notice Banner -->
+                <div style="background:var(--c-primary-light); border:1px solid #bfdbfe; border-radius:12px; padding:10px 12px; font-size:0.72rem; color:#1e40af; line-height:1.4; margin-top:10px;">
+                    ℹ <strong>Privacy Rule:</strong> Camera is used for spatial perception. Identity recognition is isolated and never gates collision warnings.
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom Navigation Bar (5 tabs) -->
+        <nav class="bottom-nav-bar">
+            <button class="nav-item active" onclick="switchTab('live')">
+                <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span class="nav-label">Home</span>
+            </button>
+            <button class="nav-item" onclick="switchTab('predict')">
+                <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+                <span class="nav-label">Predict</span>
+            </button>
+            <button class="nav-item" onclick="switchTab('haptics')">
+                <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 12h3l3-9 4 18 3-9h3l2-3"></path>
+                </svg>
+                <span class="nav-label">Haptics</span>
+            </button>
+            <button class="nav-item" onclick="switchTab('test')">
+                <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 2v7.31"></path>
+                    <path d="M14 2v7.31"></path>
+                    <path d="M8.5 2h7"></path>
+                    <path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path>
+                </svg>
+                <span class="nav-label">Test</span>
+            </button>
+            <button class="nav-item" onclick="switchTab('social')">
+                <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <span class="nav-label">Social</span>
+            </button>
+        </nav>
+
+        <!-- System Info Modal ("i" button) -->
+        <div id="info-modal" class="modal-overlay">
+            <div class="modal-card">
+                <div class="card-header-line">
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <span style="font-size:1.2rem;">ℹ️</span>
+                        <h3 style="font-size:1rem; font-weight:800; color:var(--text-title);">System Information</h3>
+                    </div>
+                    <button id="btn-close-info" style="font-size:1.2rem; cursor:pointer; color:var(--text-muted);">&times;</button>
+                </div>
+                
+                <div style="display:flex; flex-direction:column; gap:8px;">
+                    <div class="info-section-item">
+                        <span class="info-item-title">🎯 What is SpatialVector-HMI?</span>
+                        <span class="info-item-desc">A wearable assistive vision system providing real-time trajectory prediction and 2-motor vibro-tactile collision avoidance for visually impaired users.</span>
+                    </div>
+
+                    <div class="info-section-item">
+                        <span class="info-item-title">🔒 What is "Local Edge Connected"?</span>
+                        <span class="info-item-desc">AI object detection, velocity estimation, and collision prediction run 100% locally on your computer/edge hardware. Zero cloud latency and 100% video privacy.</span>
+                    </div>
+
+                    <div class="info-section-item">
+                        <span class="info-item-title">⚡ Hardware Architecture</span>
+                        <span class="info-item-desc">2-Motor Chest Unit (Pin 5 Left, Pin 6 Right) driven via Arduino micro-controller, powered continuously via external USB PowerBank.</span>
+                    </div>
+
+                    <div class="info-section-item">
+                        <span class="info-item-title">⏱️ TTC & CPA Metrics</span>
+                        <span class="info-item-desc"><strong>TTC (Time to Collision):</strong> Seconds until potential impact.<br><strong>CPA (Closest Point of Approach):</strong> Closest estimated pass distance in meters.</span>
+                    </div>
+                </div>
+
+                <div style="display:flex; justify-content:flex-end;">
+                    <button id="btn-dismiss-info" class="btn-action primary" style="width:100%;">Understood</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings Modal (Camera / Sources / Hardware) -->
+        <div id="settings-modal" class="modal-overlay">
+            <div class="modal-card">
+                <div class="card-header-line">
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <span style="font-size:1.2rem;">⚙️</span>
+                        <h3 style="font-size:1rem; font-weight:800; color:var(--text-title);">System & Camera Settings</h3>
+                    </div>
+                    <button id="btn-close-settings" style="font-size:1.2rem; cursor:pointer; color:var(--text-muted);">&times;</button>
+                </div>
+
+                <div class="setting-field-group">
+                    <span class="setting-field-label">Camera Video Source</span>
+                    <div class="source-quick-chips">
+                        <button type="button" class="source-chip" onclick="setQuickSource('2')">📹 USB Port 2 (Recommended)</button>
+                        <button type="button" class="source-chip" onclick="setQuickSource('0')">Webcam 0</button>
+                        <button type="button" class="source-chip" onclick="setQuickSource('1')">Webcam 1</button>
+                        <button type="button" class="source-chip" onclick="setQuickSource('https://vdo.ninja/?view=spatialvector_demo')">VDO.Ninja Live</button>
+                    </div>
+                    <input id="input-camera-url" type="text" class="input-text mono" placeholder="Port index (e.g. 2) or VDO.Ninja URL">
+                </div>
+
+                <div class="setting-field-group">
+                    <span class="setting-field-label">Haptic Feedback Intensity</span>
+                    <div class="source-quick-chips">
+                        <button type="button" class="source-chip active" id="chip-haptic-high" onclick="setHapticPreset('high')">High (100%)</button>
+                        <button type="button" class="source-chip" id="chip-haptic-balanced" onclick="setHapticPreset('balanced')">Balanced (75%)</button>
+                        <button type="button" class="source-chip" id="chip-haptic-gentle" onclick="setHapticPreset('gentle')">Gentle (50%)</button>
+                    </div>
+                </div>
+
+                <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:4px;">
+                    <button id="btn-cancel-settings" class="btn-action">Cancel</button>
+                    <button id="btn-save-settings" class="btn-action primary">Apply & Save</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scenario Detail & Test Runner Modal -->
+        <div id="scenario-modal" class="modal-overlay">
+            <div class="modal-card" style="max-height:85vh; overflow-y:auto;">
+                <div class="card-header-line">
+                    <div>
+                        <h3 id="scen-modal-title" style="font-size:1.05rem; font-weight:800; color:var(--text-title);">S1 — Parallel Wall</h3>
+                        <span id="scen-modal-desc" style="font-size:0.72rem; color:var(--text-muted);">Walk parallel to a wall at close distance</span>
+                    </div>
+                    <button onclick="closeScenarioDetail()" style="font-size:1.3rem; cursor:pointer; color:var(--text-muted); background:none; border:none;">&times;</button>
+                </div>
+
+                <!-- Expected Behavior Card -->
+                <div class="card" style="background:#f8fafc; padding:10px;">
+                    <span class="card-heading">Expected Behavior</span>
+                    <div class="detail-table-row"><span class="detail-key">Expected Risk</span><span id="scen-modal-exp-risk" class="pill-badge green">SAFE</span></div>
+                    <div class="detail-table-row"><span class="detail-key">Expected Haptic</span><span id="scen-modal-exp-haptic" class="detail-val mono">SILENT / IDLE</span></div>
+                    <div class="detail-table-row"><span class="detail-key">TTC Threshold</span><span id="scen-modal-exp-ttc" class="detail-val mono">&gt; 5.0 s</span></div>
+                    <div class="detail-table-row"><span class="detail-key">Path Intersection</span><span id="scen-modal-exp-intersect" class="detail-val mono">NO (Parallel)</span></div>
+                </div>
+
+                <!-- Test Execution Status & Controls -->
+                <div id="scen-runner-controls">
+                    <button id="btn-scen-modal-start" class="btn-action primary" onclick="startModalScenarioTest()" style="width:100%; padding:10px; font-size:0.88rem;">
+                        ▶ Start Test
+                    </button>
+                </div>
+
+                <!-- Active Execution Box (Hidden when idle) -->
+                <div id="scen-active-box" style="display:none; flex-direction:column; gap:6px; background:#eff6ff; border:1px solid #bfdbfe; border-radius:12px; padding:10px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span style="font-size:0.78rem; font-weight:800; color:#1e40af;">● Scenario Executing</span>
+                        <span id="scen-exec-timer-txt" class="mono" style="font-size:0.72rem; color:#2563eb; font-weight:700;">Running...</span>
+                    </div>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4px; font-size:0.68rem; color:#1e40af; margin-top:2px;">
+                        <span>✔ Sensor Stream Active</span>
+                        <span>✔ Tracking Pipeline Live</span>
+                        <span>✔ Trajectory Extrapolation</span>
+                        <span>✔ Haptic Controller Engaged</span>
+                    </div>
+                    <div style="margin-top:6px;">
+                        <button class="btn-action" onclick="stopModalScenarioTest()" style="width:100%; padding:6px; font-size:0.78rem; color:#dc2626; border-color:#fca5a5;">
+                            ⏹ Stop Test
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Result Card (Shown after execution) -->
+                <div id="scen-result-card" style="display:none; flex-direction:column; gap:6px; border-radius:12px; padding:10px; border:1px solid #a7f3d0; background:#ecfdf5;">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span id="scen-result-badge" class="pill-badge green" style="font-size:0.75rem;">✔ TEST PASSED</span>
+                        <span style="font-size:0.70rem; color:#065f46; font-weight:700;">Verified via Rule Matrix</span>
+                    </div>
+                    <div class="detail-table-row" style="border-color:rgba(16,185,129,0.2);"><span class="detail-key">Expected Risk</span><span id="scen-res-exp" class="detail-val mono">SAFE</span></div>
+                    <div class="detail-table-row" style="border-color:rgba(16,185,129,0.2);"><span class="detail-key">Observed Risk</span><span id="scen-res-act" class="detail-val mono">SAFE</span></div>
+                    <div class="detail-table-row" style="border-color:rgba(16,185,129,0.2);"><span class="detail-key">Haptic Feedback</span><span id="scen-res-hap" class="detail-val mono">ALL_CLEAR (Idle)</span></div>
+                    <div style="margin-top:6px; display:flex; gap:6px;">
+                        <button class="btn-action" onclick="toggleScenarioTimelineView()" style="flex:1; font-size:0.72rem;">📊 Toggle Timeline</button>
+                        <button class="btn-action primary" onclick="startModalScenarioTest()" style="flex:1; font-size:0.72rem;">↺ Run Again</button>
+                    </div>
+                </div>
+
+                <!-- Replay Timeline Chart (Embedded in detail modal) -->
+                <div id="scen-timeline-embed" style="display:none; flex-direction:column; gap:4px; margin-top:4px;">
+                    <div class="card-header-line">
+                        <span class="card-heading">Trajectory Risk Progression</span>
+                        <span style="font-size:0.62rem; color:var(--text-muted);">● Risk curve (0-6s)</span>
+                    </div>
+                    <div class="timeline-chart-box">
+                        <canvas id="replay-timeline-canvas" width="380" height="90" style="width:100%; height:100%;"></canvas>
+                    </div>
+                </div>
+
+                <div style="display:flex; justify-content:flex-end;">
+                    <button class="btn-action" onclick="closeScenarioDetail()" style="width:100%;">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Friend Modal (UI-Only Prototype, 3 steps) -->
+        <div id="add-friend-modal" class="modal-overlay">
+            <div class="modal-card">
+                <div class="card-header-line">
+                    <div>
+                        <h3 style="font-size:1.05rem; font-weight:800; color:var(--text-title);">Add Friend</h3>
+                        <span id="af-step-caption" style="font-size:0.72rem; color:var(--text-muted);">Step 1 of 3 · Reference photos</span>
+                    </div>
+                    <button onclick="closeAddFriendModal()" style="font-size:1.3rem; cursor:pointer; color:var(--text-muted); background:none; border:none;">&times;</button>
+                </div>
+
+                <div class="wizard-steps">
+                    <span class="wizard-dot active" id="af-dot-1">1 Photos</span>
+                    <span class="wizard-dot" id="af-dot-2">2 Name</span>
+                    <span class="wizard-dot" id="af-dot-3">3 Review</span>
+                </div>
+
+                <input type="file" id="add-friend-file-input" multiple accept="image/*" style="display:none;" onchange="handleFriendPhotosSelect(event)">
+
+                <div id="af-step-photos" class="wizard-pane active">
+                    <span class="setting-field-label">Reference Photos</span>
+                    <div class="photo-grid" id="add-friend-photo-grid">
+                        <div class="photo-add-btn" onclick="document.getElementById('add-friend-file-input').click()">
+                            <span style="font-size:1.3rem; font-weight:800;">+</span>
+                            <span>Add Photo</span>
+                        </div>
+                    </div>
+                    <span style="font-size:0.62rem; color:var(--text-dim);">Select 1 to 4 photos. Processed 100% locally — never uploaded.</span>
+                </div>
+
+                <div id="af-step-name" class="wizard-pane">
+                    <div class="setting-field-group">
+                        <span class="setting-field-label">Contact Name</span>
+                        <input id="add-friend-name-input" type="text" class="input-text" placeholder="e.g. Rahul, Dr. Roy">
+                    </div>
+                    <div class="setting-field-group">
+                        <span class="setting-field-label">Relationship</span>
+                        <select id="add-friend-relation-select" class="input-text" style="background:#ffffff;">
+                            <option value="Friend">Friend</option>
+                            <option value="Family">Family</option>
+                            <option value="Physician">Physician</option>
+                            <option value="Colleague">Colleague</option>
+                            <option value="Staff">Staff</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="af-step-review" class="wizard-pane">
+                    <div class="card" style="background:#f8fafc; padding:10px;">
+                        <div class="detail-table-row"><span class="detail-key">Name</span><span id="af-review-name" class="detail-val">—</span></div>
+                        <div class="detail-table-row"><span class="detail-key">Relationship</span><span id="af-review-rel" class="detail-val">Friend</span></div>
+                        <div class="detail-table-row"><span class="detail-key">Photos</span><span id="af-review-photos" class="detail-val mono">0</span></div>
+                    </div>
+                    <div class="photo-grid" id="af-review-grid"></div>
+                </div>
+
+                <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:4px;">
+                    <button id="btn-af-back" class="btn-action" onclick="prevAddFriendStep()" style="display:none;">Back</button>
+                    <button class="btn-action" onclick="closeAddFriendModal()">Cancel</button>
+                    <button id="btn-af-next" class="btn-action primary" onclick="nextAddFriendStep()">Next</button>
+                    <button id="btn-af-save" class="btn-action primary" onclick="saveNewFriend()" style="display:none;">Save Friend</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Profile Modal -->
+        <div id="contact-profile-modal" class="modal-overlay">
+            <div class="modal-card">
+                <div class="card-header-line">
+                    <div style="display:flex; align-items:center; gap:10px;">
+                        <div class="contact-avatar" id="prof-modal-avatar">👤</div>
+                        <div>
+                            <h3 id="prof-modal-name" style="font-size:1.05rem; font-weight:800; color:var(--text-title);">Rahul</h3>
+                            <span id="prof-modal-relation" class="pill-badge green">Friend</span>
+                        </div>
+                    </div>
+                    <button onclick="closeContactProfileModal()" style="font-size:1.3rem; cursor:pointer; color:var(--text-muted); background:none; border:none;">&times;</button>
+                </div>
+
+                <div class="card" style="background:#f8fafc; padding:10px;">
+                    <div class="detail-table-row"><span class="detail-key">Enrolled Photos</span><span id="prof-modal-photos-count" class="detail-val mono">3 photos</span></div>
+                    <div class="detail-table-row"><span class="detail-key">Spatial Recognition</span><span id="prof-modal-status" class="pill-badge green">Ready · Active</span></div>
+                    <div class="detail-table-row"><span class="detail-key">Storage Location</span><span class="detail-val mono" style="font-size:0.70rem;">Local Edge DB</span></div>
+                </div>
+                <div class="photo-grid" id="prof-modal-photo-grid"></div>
+                <input type="file" id="prof-add-photo-input" accept="image/*" style="display:none;" onchange="handleProfilePhotoSelect(event)">
+
+                <div style="display:flex; flex-direction:column; gap:6px; margin-top:4px;">
+                    <button class="btn-action" onclick="addMorePhotosToContact()">📷 Add More Photos</button>
+                    <button class="btn-action" onclick="editContactName()">✏️ Edit Name</button>
+                    <button class="btn-action" onclick="deleteCurrentContact()" style="color:#dc2626; border-color:#fca5a5;">🗑️ Delete Contact</button>
+                </div>
+
+                <div style="display:flex; justify-content:flex-end; margin-top:4px;">
+                    <button class="btn-action primary" onclick="closeContactProfileModal()" style="width:100%;">Done</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
