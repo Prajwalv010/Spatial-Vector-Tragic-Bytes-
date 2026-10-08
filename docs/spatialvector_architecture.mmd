@@ -1,0 +1,63 @@
+flowchart LR
+    subgraph INPUT["Sensing and Input"]
+        CAM["Chest-mounted camera"]
+        IMU["IMU / gyroscope"]
+    end
+
+    subgraph PERCEPTION["Perception & Ground Verification"]
+        M01["M01 Frame acquisition and timebase"]
+        M02["M02 YOLO object detection"]
+        M03["M03 Multi-object tracking"]
+        M13["M13 Ground hazard detector<br/>(Potholes & surface defects)"]
+        M14["M14 FreeSpace corridor estimator<br/>(Continuity & multi-scale gradient)"]
+    end
+
+    subgraph SPATIAL["Motion and Spatial Understanding"]
+        M04["M04 Optical flow and FOE"]
+        M05["M05 IMU and ego-motion compensation"]
+        M06["M06 Motion and geometry"]
+        M07["M07 Collision prediction<br/>TTC / CPA / intersection"]
+    end
+
+    subgraph SAFETY["Safety Intelligence & Guidance"]
+        M08["M08 Risk engine and state machine"]
+        M15["M15 Navigation decision engine<br/>(Single Source of Truth)"]
+        M09["M09 Safe corridor and haptic policy"]
+    end
+
+    subgraph OUTPUT["Feedback, Telemetry, and Evaluation"]
+        M10["M10 Arduino haptic interface"]
+        MOTORS["Directional vibration motors<br/>Left / Center / Right"]
+        M11["M11 Dashboard and telemetry"]
+        M12["M12 Logger, replay, and benchmark evaluation"]
+    end
+
+    CAM --> M01
+    M01 --> M02
+    M02 --> M03
+    M01 --> M04
+    M04 --> M05
+    IMU --> M05
+    M03 --> M06
+    M05 --> M06
+    M03 --> M07
+    M06 --> M07
+    M07 --> M08
+
+    M01 --> M13
+    M03 -.->|Raw bboxes gate| M13
+    M01 --> M14
+    M03 -.->|Obstacle overlap gate| M14
+
+    M08 --> M15
+    M13 --> M15
+    M14 --> M15
+
+    M15 --> M09
+    M15 --> M11
+    M09 --> M10
+    M10 --> MOTORS
+    M01 --> M12
+    M03 --> M12
+    M08 --> M12
+    M15 --> M12
