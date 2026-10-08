@@ -1,0 +1,16 @@
+{
+  "num_frames": 50,
+  "mean_latency_ms": 63.306770008057356,
+  "p95_latency_ms": 77.23765494301915,
+  "end_to_end_fps": 15.79609889862846,
+  "target_fps": 15.0,
+  "status": "PASS",
+  "breakdown_ms": {
+    "yolo_bytetrack": 22.276356010697782,
+    "segformer_m14": 15.844838032498956,
+    "hazard_m13": 0.010331994853913784,
+    "optical_flow_egomotion": 3.0175199918448925,
+    "decision_engine_m15": 0.01690799370408058,
+    "overlay_render": 22.137031997554004
+  }
+}

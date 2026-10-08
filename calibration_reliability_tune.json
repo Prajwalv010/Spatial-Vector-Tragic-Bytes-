@@ -1,0 +1,2922 @@
+{
+  "total_samples": 360,
+  "reliability_table": [
+    {
+      "bin": "[0.0, 0.2)",
+      "count": 162,
+      "mean_confidence": 0.0,
+      "observed_accuracy": 0.716,
+      "gap": 0.716
+    },
+    {
+      "bin": "[0.2, 0.4)",
+      "count": 2,
+      "mean_confidence": 0.3634,
+      "observed_accuracy": 0.0,
+      "gap": 0.3634
+    },
+    {
+      "bin": "[0.4, 0.6)",
+      "count": 11,
+      "mean_confidence": 0.5005,
+      "observed_accuracy": 0.8182,
+      "gap": 0.3177
+    },
+    {
+      "bin": "[0.6, 0.8)",
+      "count": 35,
+      "mean_confidence": 0.719,
+      "observed_accuracy": 0.4571,
+      "gap": 0.2618
+    },
+    {
+      "bin": "[0.8, 1.0)",
+      "count": 150,
+      "mean_confidence": 0.9931,
+      "observed_accuracy": 0.7733,
+      "gap": 0.2198
+    }
+  ],
+  "per_sample": [
+    {
+      "id": "blank_wall_001",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_002",
+      "category": "blank_wall",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_003",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_004",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_005",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.9105180533751962,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_006",
+      "category": "blank_wall",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_007",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_008",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_009",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.5,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_010",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_011",
+      "category": "blank_wall",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_012",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_013",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_014",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_015",
+      "category": "blank_wall",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_016",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_017",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_018",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.8537616229923923,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_019",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_020",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_021",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_022",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_023",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "blank_wall_024",
+      "category": "blank_wall",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_001",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_002",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_003",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_004",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_005",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_006",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_007",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_008",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_009",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_010",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_011",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_012",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_013",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_014",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_015",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_016",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_017",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_018",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_019",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_020",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_021",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_022",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_023",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "covered_lens_024",
+      "category": "covered_lens",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_001",
+      "category": "desk_closeup",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_002",
+      "category": "desk_closeup",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_003",
+      "category": "desk_closeup",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_004",
+      "category": "desk_closeup",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_005",
+      "category": "desk_closeup",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.5,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_006",
+      "category": "desk_closeup",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_007",
+      "category": "desk_closeup",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_008",
+      "category": "desk_closeup",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_009",
+      "category": "desk_closeup",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_010",
+      "category": "desk_closeup",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_011",
+      "category": "desk_closeup",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_012",
+      "category": "desk_closeup",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_013",
+      "category": "desk_closeup",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.8960270498732038,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_014",
+      "category": "desk_closeup",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_015",
+      "category": "desk_closeup",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_016",
+      "category": "desk_closeup",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_017",
+      "category": "desk_closeup",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_018",
+      "category": "desk_closeup",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_019",
+      "category": "desk_closeup",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_020",
+      "category": "desk_closeup",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_021",
+      "category": "desk_closeup",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_022",
+      "category": "desk_closeup",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_023",
+      "category": "desk_closeup",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "desk_closeup_024",
+      "category": "desk_closeup",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "indoor_corridor_001",
+      "category": "indoor_corridor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_002",
+      "category": "indoor_corridor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_003",
+      "category": "indoor_corridor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_004",
+      "category": "indoor_corridor",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.4869932606233526,
+      "expected_status": "WALKABLE",
+      "is_correct": true
+    },
+    {
+      "id": "indoor_corridor_005",
+      "category": "indoor_corridor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_006",
+      "category": "indoor_corridor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_007",
+      "category": "indoor_corridor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_008",
+      "category": "indoor_corridor",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.6239532362114417,
+      "expected_status": "WALKABLE",
+      "is_correct": true
+    },
+    {
+      "id": "indoor_corridor_009",
+      "category": "indoor_corridor",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7346739040166314,
+      "expected_status": "WALKABLE",
+      "is_correct": true
+    },
+    {
+      "id": "indoor_corridor_010",
+      "category": "indoor_corridor",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.6565809570663862,
+      "expected_status": "WALKABLE",
+      "is_correct": true
+    },
+    {
+      "id": "indoor_corridor_011",
+      "category": "indoor_corridor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_012",
+      "category": "indoor_corridor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_013",
+      "category": "indoor_corridor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_014",
+      "category": "indoor_corridor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_015",
+      "category": "indoor_corridor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_016",
+      "category": "indoor_corridor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_017",
+      "category": "indoor_corridor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_018",
+      "category": "indoor_corridor",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.6481018018375668,
+      "expected_status": "WALKABLE",
+      "is_correct": true
+    },
+    {
+      "id": "indoor_corridor_019",
+      "category": "indoor_corridor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.9974640743871513,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_020",
+      "category": "indoor_corridor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_021",
+      "category": "indoor_corridor",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7007115917751996,
+      "expected_status": "WALKABLE",
+      "is_correct": true
+    },
+    {
+      "id": "indoor_corridor_022",
+      "category": "indoor_corridor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_023",
+      "category": "indoor_corridor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_corridor_024",
+      "category": "indoor_corridor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_001",
+      "category": "indoor_floor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_002",
+      "category": "indoor_floor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_003",
+      "category": "indoor_floor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_004",
+      "category": "indoor_floor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_005",
+      "category": "indoor_floor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_006",
+      "category": "indoor_floor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_007",
+      "category": "indoor_floor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_008",
+      "category": "indoor_floor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_009",
+      "category": "indoor_floor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_010",
+      "category": "indoor_floor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_011",
+      "category": "indoor_floor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_012",
+      "category": "indoor_floor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_013",
+      "category": "indoor_floor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_014",
+      "category": "indoor_floor",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.5466953019116725,
+      "expected_status": "WALKABLE",
+      "is_correct": true
+    },
+    {
+      "id": "indoor_floor_015",
+      "category": "indoor_floor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_016",
+      "category": "indoor_floor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_017",
+      "category": "indoor_floor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_018",
+      "category": "indoor_floor",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.73987816529871,
+      "expected_status": "WALKABLE",
+      "is_correct": true
+    },
+    {
+      "id": "indoor_floor_019",
+      "category": "indoor_floor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_020",
+      "category": "indoor_floor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_021",
+      "category": "indoor_floor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_022",
+      "category": "indoor_floor",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_023",
+      "category": "indoor_floor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "indoor_floor_024",
+      "category": "indoor_floor",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_001",
+      "category": "outdoor_footpath",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_002",
+      "category": "outdoor_footpath",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7393435603902616,
+      "expected_status": "WALKABLE",
+      "is_correct": true
+    },
+    {
+      "id": "outdoor_footpath_003",
+      "category": "outdoor_footpath",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_004",
+      "category": "outdoor_footpath",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_005",
+      "category": "outdoor_footpath",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_006",
+      "category": "outdoor_footpath",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_007",
+      "category": "outdoor_footpath",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7396808385261192,
+      "expected_status": "WALKABLE",
+      "is_correct": true
+    },
+    {
+      "id": "outdoor_footpath_008",
+      "category": "outdoor_footpath",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_009",
+      "category": "outdoor_footpath",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_010",
+      "category": "outdoor_footpath",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_011",
+      "category": "outdoor_footpath",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_012",
+      "category": "outdoor_footpath",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.84530853761623,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_013",
+      "category": "outdoor_footpath",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_014",
+      "category": "outdoor_footpath",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_015",
+      "category": "outdoor_footpath",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_016",
+      "category": "outdoor_footpath",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_017",
+      "category": "outdoor_footpath",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_018",
+      "category": "outdoor_footpath",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_019",
+      "category": "outdoor_footpath",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_020",
+      "category": "outdoor_footpath",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_021",
+      "category": "outdoor_footpath",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_022",
+      "category": "outdoor_footpath",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_023",
+      "category": "outdoor_footpath",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_footpath_024",
+      "category": "outdoor_footpath",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_001",
+      "category": "outdoor_road_clear",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_002",
+      "category": "outdoor_road_clear",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_003",
+      "category": "outdoor_road_clear",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7138958383871995,
+      "expected_status": "WALKABLE",
+      "is_correct": true
+    },
+    {
+      "id": "outdoor_road_clear_004",
+      "category": "outdoor_road_clear",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_005",
+      "category": "outdoor_road_clear",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.5014300275266923,
+      "expected_status": "WALKABLE",
+      "is_correct": true
+    },
+    {
+      "id": "outdoor_road_clear_006",
+      "category": "outdoor_road_clear",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_007",
+      "category": "outdoor_road_clear",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_008",
+      "category": "outdoor_road_clear",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_009",
+      "category": "outdoor_road_clear",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_010",
+      "category": "outdoor_road_clear",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_011",
+      "category": "outdoor_road_clear",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7377658698210597,
+      "expected_status": "WALKABLE",
+      "is_correct": true
+    },
+    {
+      "id": "outdoor_road_clear_012",
+      "category": "outdoor_road_clear",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_013",
+      "category": "outdoor_road_clear",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_014",
+      "category": "outdoor_road_clear",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_015",
+      "category": "outdoor_road_clear",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.6077852019951545,
+      "expected_status": "WALKABLE",
+      "is_correct": true
+    },
+    {
+      "id": "outdoor_road_clear_016",
+      "category": "outdoor_road_clear",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.84530853761623,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_017",
+      "category": "outdoor_road_clear",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_018",
+      "category": "outdoor_road_clear",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_019",
+      "category": "outdoor_road_clear",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_020",
+      "category": "outdoor_road_clear",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_021",
+      "category": "outdoor_road_clear",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "outdoor_road_clear_022",
+      "category": "outdoor_road_clear",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7273909503483446,
+      "expected_status": "WALKABLE",
+      "is_correct": true
+    },
+    {
+      "id": "outdoor_road_clear_023",
+      "category": "outdoor_road_clear",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.45849279784184827,
+      "expected_status": "WALKABLE",
+      "is_correct": true
+    },
+    {
+      "id": "outdoor_road_clear_024",
+      "category": "outdoor_road_clear",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "WALKABLE",
+      "is_correct": false
+    },
+    {
+      "id": "pedestrian_crossing_001",
+      "category": "pedestrian_crossing",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_002",
+      "category": "pedestrian_crossing",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_003",
+      "category": "pedestrian_crossing",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_004",
+      "category": "pedestrian_crossing",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7399859913825958,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "pedestrian_crossing_005",
+      "category": "pedestrian_crossing",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_006",
+      "category": "pedestrian_crossing",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_007",
+      "category": "pedestrian_crossing",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_008",
+      "category": "pedestrian_crossing",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_009",
+      "category": "pedestrian_crossing",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_010",
+      "category": "pedestrian_crossing",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_011",
+      "category": "pedestrian_crossing",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_012",
+      "category": "pedestrian_crossing",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7364463955607788,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "pedestrian_crossing_013",
+      "category": "pedestrian_crossing",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_014",
+      "category": "pedestrian_crossing",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_015",
+      "category": "pedestrian_crossing",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_016",
+      "category": "pedestrian_crossing",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_017",
+      "category": "pedestrian_crossing",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_018",
+      "category": "pedestrian_crossing",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_019",
+      "category": "pedestrian_crossing",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_020",
+      "category": "pedestrian_crossing",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_021",
+      "category": "pedestrian_crossing",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_022",
+      "category": "pedestrian_crossing",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_023",
+      "category": "pedestrian_crossing",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "pedestrian_crossing_024",
+      "category": "pedestrian_crossing",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.9551986475063399,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_001",
+      "category": "road_manhole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.73541842772612,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_002",
+      "category": "road_manhole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_003",
+      "category": "road_manhole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.7016060862214709,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_004",
+      "category": "road_manhole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_005",
+      "category": "road_manhole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_006",
+      "category": "road_manhole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_007",
+      "category": "road_manhole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_008",
+      "category": "road_manhole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_009",
+      "category": "road_manhole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_010",
+      "category": "road_manhole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_011",
+      "category": "road_manhole",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_012",
+      "category": "road_manhole",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_013",
+      "category": "road_manhole",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_014",
+      "category": "road_manhole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.5,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_015",
+      "category": "road_manhole",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_016",
+      "category": "road_manhole",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_017",
+      "category": "road_manhole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_018",
+      "category": "road_manhole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_019",
+      "category": "road_manhole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_020",
+      "category": "road_manhole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_021",
+      "category": "road_manhole",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_022",
+      "category": "road_manhole",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_023",
+      "category": "road_manhole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.7692307692307693,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_manhole_024",
+      "category": "road_manhole",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_001",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_002",
+      "category": "road_patch_puddle",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_003",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_004",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_005",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_006",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_007",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_008",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_009",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_010",
+      "category": "road_patch_puddle",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.65327479594943,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_patch_puddle_011",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_012",
+      "category": "road_patch_puddle",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.419648794876162,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_patch_puddle_013",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_014",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_015",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_016",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_017",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_018",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_019",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_020",
+      "category": "road_patch_puddle",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7375194266159087,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_patch_puddle_021",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_022",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_023",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_patch_puddle_024",
+      "category": "road_patch_puddle",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_pothole_001",
+      "category": "road_pothole",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_pothole_002",
+      "category": "road_pothole",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7398897575712681,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_pothole_003",
+      "category": "road_pothole",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7399712586293662,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_pothole_004",
+      "category": "road_pothole",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7396492674693581,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_pothole_005",
+      "category": "road_pothole",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7398964721124991,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_pothole_006",
+      "category": "road_pothole",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_pothole_007",
+      "category": "road_pothole",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_pothole_008",
+      "category": "road_pothole",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_pothole_009",
+      "category": "road_pothole",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_pothole_010",
+      "category": "road_pothole",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7399202028641241,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_pothole_011",
+      "category": "road_pothole",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_pothole_012",
+      "category": "road_pothole",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7364923648058175,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_pothole_013",
+      "category": "road_pothole",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7214207386221155,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_pothole_014",
+      "category": "road_pothole",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7386758799531525,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_pothole_015",
+      "category": "road_pothole",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.6931075878440803,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_pothole_016",
+      "category": "road_pothole",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7399054913314467,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_pothole_017",
+      "category": "road_pothole",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.5254534076470164,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_pothole_018",
+      "category": "road_pothole",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7383727763069328,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_pothole_019",
+      "category": "road_pothole",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_pothole_020",
+      "category": "road_pothole",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.3813279773934598,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_pothole_021",
+      "category": "road_pothole",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7383547681010532,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_pothole_022",
+      "category": "road_pothole",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "BLOCKED",
+      "is_correct": true
+    },
+    {
+      "id": "road_pothole_023",
+      "category": "road_pothole",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7398473714456667,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "road_pothole_024",
+      "category": "road_pothole",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.34547500478982685,
+      "expected_status": "BLOCKED",
+      "is_correct": false
+    },
+    {
+      "id": "stairs_down_001",
+      "category": "stairs_down",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_002",
+      "category": "stairs_down",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_003",
+      "category": "stairs_down",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_004",
+      "category": "stairs_down",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_005",
+      "category": "stairs_down",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_006",
+      "category": "stairs_down",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_007",
+      "category": "stairs_down",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_008",
+      "category": "stairs_down",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_009",
+      "category": "stairs_down",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_010",
+      "category": "stairs_down",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_011",
+      "category": "stairs_down",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_012",
+      "category": "stairs_down",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_013",
+      "category": "stairs_down",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.8622147083685545,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_014",
+      "category": "stairs_down",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.7945900253592562,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_015",
+      "category": "stairs_down",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_016",
+      "category": "stairs_down",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_017",
+      "category": "stairs_down",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_018",
+      "category": "stairs_down",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_019",
+      "category": "stairs_down",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_020",
+      "category": "stairs_down",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_021",
+      "category": "stairs_down",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_022",
+      "category": "stairs_down",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_023",
+      "category": "stairs_down",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_down_024",
+      "category": "stairs_down",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_001",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_002",
+      "category": "stairs_up",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_003",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_004",
+      "category": "stairs_up",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_005",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_006",
+      "category": "stairs_up",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_007",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_008",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_009",
+      "category": "stairs_up",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_010",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_011",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_012",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_013",
+      "category": "stairs_up",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_014",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_015",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_016",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_017",
+      "category": "stairs_up",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_018",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_019",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_020",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.5,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_021",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_022",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_023",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "stairs_up_024",
+      "category": "stairs_up",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_001",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_002",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.9467455621301777,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_003",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_004",
+      "category": "table_corner",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_005",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_006",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_007",
+      "category": "table_corner",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_008",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_009",
+      "category": "table_corner",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_010",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_011",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_012",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_013",
+      "category": "table_corner",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.7352933115605649,
+      "expected_status": "UNKNOWN",
+      "is_correct": false
+    },
+    {
+      "id": "table_corner_014",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_015",
+      "category": "table_corner",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_016",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_017",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_018",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.8537616229923923,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_019",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_020",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_021",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_022",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_023",
+      "category": "table_corner",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_corner_024",
+      "category": "table_corner",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_001",
+      "category": "table_edge",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_002",
+      "category": "table_edge",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_003",
+      "category": "table_edge",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_004",
+      "category": "table_edge",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_005",
+      "category": "table_edge",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_006",
+      "category": "table_edge",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_007",
+      "category": "table_edge",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_008",
+      "category": "table_edge",
+      "pred_status": "BLOCKED",
+      "pred_conf": 0.5663567202028741,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_009",
+      "category": "table_edge",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_010",
+      "category": "table_edge",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_011",
+      "category": "table_edge",
+      "pred_status": "WALKABLE",
+      "pred_conf": 0.6455079928177093,
+      "expected_status": "UNKNOWN",
+      "is_correct": false
+    },
+    {
+      "id": "table_edge_012",
+      "category": "table_edge",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_013",
+      "category": "table_edge",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_014",
+      "category": "table_edge",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_015",
+      "category": "table_edge",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_016",
+      "category": "table_edge",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_017",
+      "category": "table_edge",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_018",
+      "category": "table_edge",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_019",
+      "category": "table_edge",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_020",
+      "category": "table_edge",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_021",
+      "category": "table_edge",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_022",
+      "category": "table_edge",
+      "pred_status": "BLOCKED",
+      "pred_conf": 1.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_023",
+      "category": "table_edge",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    },
+    {
+      "id": "table_edge_024",
+      "category": "table_edge",
+      "pred_status": "UNKNOWN",
+      "pred_conf": 0.0,
+      "expected_status": "UNKNOWN",
+      "is_correct": true
+    }
+  ]
+}

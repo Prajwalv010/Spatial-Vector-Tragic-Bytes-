@@ -1,0 +1,541 @@
+fixture,category,corridor,expected_walkable,got_walkable,conf,reason,tp_w,fp_w,fn_w,tp_b,fp_b,fn_b,pothole_expected,pothole_got,objects_expected,objects_got,fps_m14
+blank_wall_002,blank_wall,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,1,,person;person;person;person;person;person;person;person;person;sports ball,9.7
+blank_wall_002,blank_wall,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,1,,person;person;person;person;person;person;person;person;person;sports ball,9.7
+blank_wall_002,blank_wall,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,1,,person;person;person;person;person;person;person;person;person;sports ball,9.7
+blank_wall_004,blank_wall,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 45% (wall/table/stairs),0,0,0,1,0,0,0,0,,person;dog,33.5
+blank_wall_004,blank_wall,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;dog,33.5
+blank_wall_004,blank_wall,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;dog,33.5
+blank_wall_006,blank_wall,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,cat,38.6
+blank_wall_006,blank_wall,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,cat,38.6
+blank_wall_006,blank_wall,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,cat,38.6
+blank_wall_008,blank_wall,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 90% (wall/table/stairs),0,0,0,1,0,0,0,0,,,37.8
+blank_wall_008,blank_wall,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,0,1,0,0,0,0,,,37.8
+blank_wall_008,blank_wall,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 76% (wall/table/stairs),0,0,0,1,0,0,0,0,,,37.8
+blank_wall_010,blank_wall,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 84% (wall/table/stairs),0,0,0,1,0,0,0,1,,,33.2
+blank_wall_010,blank_wall,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 56% (wall/table/stairs),0,0,0,1,0,0,0,1,,,33.2
+blank_wall_010,blank_wall,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 84% (wall/table/stairs),0,0,0,1,0,0,0,1,,,33.2
+blank_wall_012,blank_wall,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 84% (wall/table/stairs),0,0,0,1,0,0,0,0,,,35.3
+blank_wall_012,blank_wall,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 96% (wall/table/stairs),0,0,0,1,0,0,0,0,,,35.3
+blank_wall_012,blank_wall,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 81% (wall/table/stairs),0,0,0,1,0,0,0,0,,,35.3
+blank_wall_014,blank_wall,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 75% (wall/table/stairs),0,0,0,1,0,0,0,0,,,29.6
+blank_wall_014,blank_wall,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 80% (wall/table/stairs),0,0,0,1,0,0,0,0,,,29.6
+blank_wall_014,blank_wall,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 83% (wall/table/stairs),0,0,0,1,0,0,0,0,,,29.6
+blank_wall_016,blank_wall,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,bench;potted plant;bench;bench;bench;bench,17.6
+blank_wall_016,blank_wall,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,bench;potted plant;bench;bench;bench;bench,17.6
+blank_wall_016,blank_wall,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,bench;potted plant;bench;bench;bench;bench,17.6
+blank_wall_018,blank_wall,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,pizza,19.5
+blank_wall_018,blank_wall,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,pizza,19.5
+blank_wall_018,blank_wall,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,pizza,19.5
+blank_wall_020,blank_wall,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 56% (wall/table/stairs),0,0,0,1,0,0,0,0,,,27.2
+blank_wall_020,blank_wall,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 66% (wall/table/stairs),0,0,0,1,0,0,0,0,,,27.2
+blank_wall_020,blank_wall,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 56% (wall/table/stairs),0,0,0,1,0,0,0,0,,,27.2
+blank_wall_022,blank_wall,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,clock,34.7
+blank_wall_022,blank_wall,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,clock,34.7
+blank_wall_022,blank_wall,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,clock,34.7
+blank_wall_024,blank_wall,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 43% (wall/table/stairs),0,0,0,1,0,0,0,0,,,32.1
+blank_wall_024,blank_wall,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 63% (wall/table/stairs),0,0,0,1,0,0,0,0,,,32.1
+blank_wall_024,blank_wall,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 77% (wall/table/stairs),0,0,0,1,0,0,0,0,,,32.1
+covered_lens_002,covered_lens,left,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=5.0),0,0,0,1,0,0,0,0,,,390.6
+covered_lens_002,covered_lens,centre,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=5.0),0,0,0,1,0,0,0,0,,,390.6
+covered_lens_002,covered_lens,right,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=5.0),0,0,0,1,0,0,0,0,,,390.6
+covered_lens_004,covered_lens,left,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.2),0,0,0,1,0,0,0,0,,,407.6
+covered_lens_004,covered_lens,centre,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.2),0,0,0,1,0,0,0,0,,,407.6
+covered_lens_004,covered_lens,right,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.2),0,0,0,1,0,0,0,0,,,407.6
+covered_lens_006,covered_lens,left,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.2),0,0,0,1,0,0,0,0,,,274.7
+covered_lens_006,covered_lens,centre,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.2),0,0,0,1,0,0,0,0,,,274.7
+covered_lens_006,covered_lens,right,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.2),0,0,0,1,0,0,0,0,,,274.7
+covered_lens_008,covered_lens,left,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=5.0),0,0,0,1,0,0,0,0,,,329.2
+covered_lens_008,covered_lens,centre,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=5.0),0,0,0,1,0,0,0,0,,,329.2
+covered_lens_008,covered_lens,right,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=5.0),0,0,0,1,0,0,0,0,,,329.2
+covered_lens_010,covered_lens,left,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.1),0,0,0,1,0,0,0,0,,,458.1
+covered_lens_010,covered_lens,centre,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.1),0,0,0,1,0,0,0,0,,,458.1
+covered_lens_010,covered_lens,right,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.1),0,0,0,1,0,0,0,0,,,458.1
+covered_lens_012,covered_lens,left,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.2),0,0,0,1,0,0,0,0,,,389.9
+covered_lens_012,covered_lens,centre,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.2),0,0,0,1,0,0,0,0,,,389.9
+covered_lens_012,covered_lens,right,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.2),0,0,0,1,0,0,0,0,,,389.9
+covered_lens_014,covered_lens,left,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=5.0),0,0,0,1,0,0,0,0,,,417.9
+covered_lens_014,covered_lens,centre,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=5.0),0,0,0,1,0,0,0,0,,,417.9
+covered_lens_014,covered_lens,right,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=5.0),0,0,0,1,0,0,0,0,,,417.9
+covered_lens_016,covered_lens,left,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.1),0,0,0,1,0,0,0,0,,,385.2
+covered_lens_016,covered_lens,centre,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.1),0,0,0,1,0,0,0,0,,,385.2
+covered_lens_016,covered_lens,right,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.1),0,0,0,1,0,0,0,0,,,385.2
+covered_lens_018,covered_lens,left,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.2),0,0,0,1,0,0,0,0,,,357.8
+covered_lens_018,covered_lens,centre,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.2),0,0,0,1,0,0,0,0,,,357.8
+covered_lens_018,covered_lens,right,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.2),0,0,0,1,0,0,0,0,,,357.8
+covered_lens_020,covered_lens,left,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=5.1),0,0,0,1,0,0,0,0,,,416.5
+covered_lens_020,covered_lens,centre,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=5.1),0,0,0,1,0,0,0,0,,,416.5
+covered_lens_020,covered_lens,right,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=5.1),0,0,0,1,0,0,0,0,,,416.5
+covered_lens_022,covered_lens,left,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.1),0,0,0,1,0,0,0,0,,,291.5
+covered_lens_022,covered_lens,centre,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.1),0,0,0,1,0,0,0,0,,,291.5
+covered_lens_022,covered_lens,right,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.1),0,0,0,1,0,0,0,0,,,291.5
+covered_lens_024,covered_lens,left,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.2),0,0,0,1,0,0,0,0,,,364.0
+covered_lens_024,covered_lens,centre,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.2),0,0,0,1,0,0,0,0,,,364.0
+covered_lens_024,covered_lens,right,UNKNOWN,UNKNOWN,0.000,frame blurry/covered (lap_var=6.2),0,0,0,1,0,0,0,0,,,364.0
+desk_closeup_002,desk_closeup,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,37.4
+desk_closeup_002,desk_closeup,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,37.4
+desk_closeup_002,desk_closeup,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,37.4
+desk_closeup_004,desk_closeup,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,30.8
+desk_closeup_004,desk_closeup,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,30.8
+desk_closeup_004,desk_closeup,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,30.8
+desk_closeup_006,desk_closeup,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,33.8
+desk_closeup_006,desk_closeup,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,33.8
+desk_closeup_006,desk_closeup,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,33.8
+desk_closeup_008,desk_closeup,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,27.4
+desk_closeup_008,desk_closeup,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,27.4
+desk_closeup_008,desk_closeup,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,27.4
+desk_closeup_010,desk_closeup,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,person,34.0
+desk_closeup_010,desk_closeup,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,person,34.0
+desk_closeup_010,desk_closeup,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,person,34.0
+desk_closeup_012,desk_closeup,left,BLOCKED,UNKNOWN,0.000,frame over-exposed (mean=241.3),0,0,0,1,0,0,0,0,laptop;keyboard,,419.5
+desk_closeup_012,desk_closeup,centre,BLOCKED,UNKNOWN,0.000,frame over-exposed (mean=241.3),0,0,0,1,0,0,0,0,laptop;keyboard,,419.5
+desk_closeup_012,desk_closeup,right,BLOCKED,UNKNOWN,0.000,frame over-exposed (mean=241.3),0,0,0,1,0,0,0,0,laptop;keyboard,,419.5
+desk_closeup_014,desk_closeup,left,BLOCKED,BLOCKED,0.850,semantic obstacle 91% (wall/table/stairs),0,0,0,1,0,0,0,0,laptop;keyboard,,35.5
+desk_closeup_014,desk_closeup,centre,BLOCKED,BLOCKED,0.800,scene obstacle 42% (stairs/building wall),0,0,0,1,0,0,0,0,laptop;keyboard,,35.5
+desk_closeup_014,desk_closeup,right,BLOCKED,BLOCKED,0.800,scene obstacle 42% (stairs/building wall),0,0,0,1,0,0,0,0,laptop;keyboard,,35.5
+desk_closeup_016,desk_closeup,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,40.4
+desk_closeup_016,desk_closeup,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,40.4
+desk_closeup_016,desk_closeup,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,40.4
+desk_closeup_018,desk_closeup,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,42.6
+desk_closeup_018,desk_closeup,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,42.6
+desk_closeup_018,desk_closeup,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,42.6
+desk_closeup_020,desk_closeup,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard;cell phone;cell phone;cell phone,36.4
+desk_closeup_020,desk_closeup,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard;cell phone;cell phone;cell phone,36.4
+desk_closeup_020,desk_closeup,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard;cell phone;cell phone;cell phone,36.4
+desk_closeup_022,desk_closeup,left,BLOCKED,UNKNOWN,0.100,surface mismatch ahead (span diff 59.6 px),0,0,0,1,0,0,0,0,laptop;keyboard,wine glass;wine glass,37.4
+desk_closeup_022,desk_closeup,centre,BLOCKED,BLOCKED,0.800,scene obstacle 28% (stairs/building wall),0,0,0,1,0,0,0,0,laptop;keyboard,wine glass;wine glass,37.4
+desk_closeup_022,desk_closeup,right,BLOCKED,BLOCKED,0.850,semantic obstacle 68% (wall/table/stairs),0,0,0,1,0,0,0,0,laptop;keyboard,wine glass;wine glass,37.4
+desk_closeup_024,desk_closeup,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,38.8
+desk_closeup_024,desk_closeup,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,38.8
+desk_closeup_024,desk_closeup,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,laptop;keyboard,keyboard,38.8
+indoor_corridor_002,indoor_corridor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 90% (wall/table/stairs),0,0,1,0,1,0,0,1,,bench,38.5
+indoor_corridor_002,indoor_corridor,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,1,,bench,38.5
+indoor_corridor_002,indoor_corridor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 85% (wall/table/stairs),0,0,1,0,1,0,0,1,,bench,38.5
+indoor_corridor_004,indoor_corridor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 63% (wall/table/stairs),0,0,1,0,1,0,0,0,,,34.6
+indoor_corridor_004,indoor_corridor,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 31% (wall/table/stairs),0,0,1,0,1,0,0,0,,,34.6
+indoor_corridor_004,indoor_corridor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 84% (wall/table/stairs),0,0,1,0,1,0,0,0,,,34.6
+indoor_corridor_006,indoor_corridor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 59% (wall/table/stairs),0,0,1,0,1,0,0,1,,,33.1
+indoor_corridor_006,indoor_corridor,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 32% (wall/table/stairs),0,0,1,0,1,0,0,1,,,33.1
+indoor_corridor_006,indoor_corridor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 54% (wall/table/stairs),0,0,1,0,1,0,0,1,,,33.1
+indoor_corridor_008,indoor_corridor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 86% (wall/table/stairs),0,0,1,0,1,0,0,0,,,32.5
+indoor_corridor_008,indoor_corridor,centre,WALKABLE,WALKABLE,0.800,ground confirmed (model=0.8579881656804734),1,0,0,0,0,0,0,0,,,32.5
+indoor_corridor_008,indoor_corridor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 87% (wall/table/stairs),0,0,1,0,1,0,0,0,,,32.5
+indoor_corridor_010,indoor_corridor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 72% (wall/table/stairs),0,0,1,0,1,0,0,0,,person,37.3
+indoor_corridor_010,indoor_corridor,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,person,37.3
+indoor_corridor_010,indoor_corridor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 86% (wall/table/stairs),0,0,1,0,1,0,0,0,,person,37.3
+indoor_corridor_012,indoor_corridor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 57% (wall/table/stairs),0,0,1,0,1,0,0,0,,potted plant,40.4
+indoor_corridor_012,indoor_corridor,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,potted plant,40.4
+indoor_corridor_012,indoor_corridor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 80% (wall/table/stairs),0,0,1,0,1,0,0,0,,potted plant,40.4
+indoor_corridor_014,indoor_corridor,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,person;chair,40.3
+indoor_corridor_014,indoor_corridor,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,person;chair,40.3
+indoor_corridor_014,indoor_corridor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 79% (wall/table/stairs),0,0,1,0,1,0,0,0,,person;chair,40.3
+indoor_corridor_016,indoor_corridor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 68% (wall/table/stairs),0,0,1,0,1,0,0,0,,,40.7
+indoor_corridor_016,indoor_corridor,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 48% (wall/table/stairs),0,0,1,0,1,0,0,0,,,40.7
+indoor_corridor_016,indoor_corridor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 95% (wall/table/stairs),0,0,1,0,1,0,0,0,,,40.7
+indoor_corridor_018,indoor_corridor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 70% (wall/table/stairs),0,0,1,0,1,0,0,0,,,33.4
+indoor_corridor_018,indoor_corridor,centre,WALKABLE,WALKABLE,0.800,ground confirmed (model=0.8875739644970414),1,0,0,0,0,0,0,0,,,33.4
+indoor_corridor_018,indoor_corridor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 37% (wall/table/stairs),0,0,1,0,1,0,0,0,,,33.4
+indoor_corridor_020,indoor_corridor,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,truck,39.1
+indoor_corridor_020,indoor_corridor,centre,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,0,,truck,39.1
+indoor_corridor_020,indoor_corridor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 24% (wall/table/stairs),0,0,1,0,1,0,0,0,,truck,39.1
+indoor_corridor_022,indoor_corridor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 73% (wall/table/stairs),0,0,1,0,1,0,0,0,,,35.2
+indoor_corridor_022,indoor_corridor,centre,WALKABLE,UNKNOWN,0.100,surface mismatch ahead (span diff 49.2 px),0,0,1,0,1,0,0,0,,,35.2
+indoor_corridor_022,indoor_corridor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 57% (wall/table/stairs),0,0,1,0,1,0,0,0,,,35.2
+indoor_corridor_024,indoor_corridor,left,WALKABLE,WALKABLE,0.650,ground confirmed (model=0.3333333333333333),1,0,0,0,0,0,0,0,,,39.9
+indoor_corridor_024,indoor_corridor,centre,WALKABLE,UNKNOWN,0.100,surface mismatch ahead (span diff 45.9 px),0,0,1,0,1,0,0,0,,,39.9
+indoor_corridor_024,indoor_corridor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 50% (wall/table/stairs),0,0,1,0,1,0,0,0,,,39.9
+indoor_floor_002,indoor_floor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,1,0,1,0,0,0,,,36.5
+indoor_floor_002,indoor_floor,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,1,0,1,0,0,0,,,36.5
+indoor_floor_002,indoor_floor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,1,0,1,0,0,0,,,36.5
+indoor_floor_004,indoor_floor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,1,0,1,0,0,0,,,41.5
+indoor_floor_004,indoor_floor,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,1,0,1,0,0,0,,,41.5
+indoor_floor_004,indoor_floor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,1,0,1,0,0,0,,,41.5
+indoor_floor_006,indoor_floor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 86% (wall/table/stairs),0,0,1,0,1,0,0,0,,,33.0
+indoor_floor_006,indoor_floor,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 89% (wall/table/stairs),0,0,1,0,1,0,0,0,,,33.0
+indoor_floor_006,indoor_floor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 85% (wall/table/stairs),0,0,1,0,1,0,0,0,,,33.0
+indoor_floor_008,indoor_floor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 57% (wall/table/stairs),0,0,1,0,1,0,0,0,,,31.9
+indoor_floor_008,indoor_floor,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 52% (wall/table/stairs),0,0,1,0,1,0,0,0,,,31.9
+indoor_floor_008,indoor_floor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 47% (wall/table/stairs),0,0,1,0,1,0,0,0,,,31.9
+indoor_floor_010,indoor_floor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 77% (wall/table/stairs),0,0,1,0,1,0,0,0,,,35.7
+indoor_floor_010,indoor_floor,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 97% (wall/table/stairs),0,0,1,0,1,0,0,0,,,35.7
+indoor_floor_010,indoor_floor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,1,0,1,0,0,0,,,35.7
+indoor_floor_012,indoor_floor,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,1,,person;person;person;frisbee,37.7
+indoor_floor_012,indoor_floor,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,1,,person;person;person;frisbee,37.7
+indoor_floor_012,indoor_floor,right,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,1,,person;person;person;frisbee,37.7
+indoor_floor_014,indoor_floor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 58% (wall/table/stairs),0,0,1,0,1,0,0,0,,,37.2
+indoor_floor_014,indoor_floor,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 22% (wall/table/stairs),0,0,1,0,1,0,0,0,,,37.2
+indoor_floor_014,indoor_floor,right,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,0,,,37.2
+indoor_floor_016,indoor_floor,left,WALKABLE,WALKABLE,0.800,ground confirmed (model=0.9487179487179487),1,0,0,0,0,0,0,0,,,32.7
+indoor_floor_016,indoor_floor,centre,WALKABLE,WALKABLE,0.800,ground confirmed (model=0.863905325443787),1,0,0,0,0,0,0,0,,,32.7
+indoor_floor_016,indoor_floor,right,WALKABLE,WALKABLE,0.800,ground confirmed (model=0.8374125874125874),1,0,0,0,0,0,0,0,,,32.7
+indoor_floor_018,indoor_floor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 24% (wall/table/stairs),0,0,1,0,1,0,0,0,,,35.5
+indoor_floor_018,indoor_floor,centre,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,0,,,35.5
+indoor_floor_018,indoor_floor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 37% (wall/table/stairs),0,0,1,0,1,0,0,0,,,35.5
+indoor_floor_020,indoor_floor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,1,0,1,0,0,0,,,35.3
+indoor_floor_020,indoor_floor,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 94% (wall/table/stairs),0,0,1,0,1,0,0,0,,,35.3
+indoor_floor_020,indoor_floor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,1,0,1,0,0,0,,,35.3
+indoor_floor_022,indoor_floor,left,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,0,,,34.1
+indoor_floor_022,indoor_floor,centre,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,0,,,34.1
+indoor_floor_022,indoor_floor,right,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,0,,,34.1
+indoor_floor_024,indoor_floor,left,WALKABLE,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,1,0,1,0,0,0,,,37.5
+indoor_floor_024,indoor_floor,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,1,0,1,0,0,0,,,37.5
+indoor_floor_024,indoor_floor,right,WALKABLE,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,1,0,1,0,0,0,,,37.5
+outdoor_footpath_002,outdoor_footpath,left,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,0,person,bench,36.3
+outdoor_footpath_002,outdoor_footpath,centre,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,0,person,bench,36.3
+outdoor_footpath_002,outdoor_footpath,right,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,0,person,bench,36.3
+outdoor_footpath_004,outdoor_footpath,left,WALKABLE,BLOCKED,0.850,semantic obstacle 71% (wall/table/stairs),0,0,1,0,1,0,0,0,person,car,42.3
+outdoor_footpath_004,outdoor_footpath,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,person,car,42.3
+outdoor_footpath_004,outdoor_footpath,right,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,person,car,42.3
+outdoor_footpath_006,outdoor_footpath,left,WALKABLE,UNKNOWN,0.100,unexplained dark region (25% of corridor),0,0,1,0,1,0,0,0,person,,37.3
+outdoor_footpath_006,outdoor_footpath,centre,WALKABLE,UNKNOWN,0.100,surface mismatch ahead (span diff 52.5 px),0,0,1,0,1,0,0,0,person,,37.3
+outdoor_footpath_006,outdoor_footpath,right,WALKABLE,UNKNOWN,0.100,surface mismatch ahead (span diff 56.8 px),0,0,1,0,1,0,0,0,person,,37.3
+outdoor_footpath_008,outdoor_footpath,left,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,0,person,,41.1
+outdoor_footpath_008,outdoor_footpath,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 46% (wall/table/stairs),0,0,1,0,1,0,0,0,person,,41.1
+outdoor_footpath_008,outdoor_footpath,right,WALKABLE,BLOCKED,0.850,semantic obstacle 17% (wall/table/stairs),0,0,1,0,1,0,0,0,person,,41.1
+outdoor_footpath_010,outdoor_footpath,left,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,0,person,,37.9
+outdoor_footpath_010,outdoor_footpath,centre,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,0,person,,37.9
+outdoor_footpath_010,outdoor_footpath,right,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,0,person,,37.9
+outdoor_footpath_012,outdoor_footpath,left,WALKABLE,BLOCKED,0.850,semantic obstacle 71% (wall/table/stairs),0,0,1,0,1,0,0,0,person,umbrella;car,40.4
+outdoor_footpath_012,outdoor_footpath,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,person,umbrella;car,40.4
+outdoor_footpath_012,outdoor_footpath,right,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,person,umbrella;car,40.4
+outdoor_footpath_014,outdoor_footpath,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,person,bird,41.3
+outdoor_footpath_014,outdoor_footpath,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,person,bird,41.3
+outdoor_footpath_014,outdoor_footpath,right,WALKABLE,BLOCKED,0.850,semantic obstacle 22% (wall/table/stairs),0,0,1,0,1,0,0,0,person,bird,41.3
+outdoor_footpath_016,outdoor_footpath,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,person,suitcase;person;car;car;motorcycle,37.9
+outdoor_footpath_016,outdoor_footpath,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,person,suitcase;person;car;car;motorcycle,37.9
+outdoor_footpath_016,outdoor_footpath,right,WALKABLE,WALKABLE,0.800,ground confirmed (model=0.9458041958041958),1,0,0,0,0,0,0,0,person,suitcase;person;car;car;motorcycle,37.9
+outdoor_footpath_018,outdoor_footpath,left,WALKABLE,BLOCKED,0.850,semantic obstacle 18% (wall/table/stairs),0,0,1,0,1,0,0,0,person,,36.0
+outdoor_footpath_018,outdoor_footpath,centre,WALKABLE,UNKNOWN,0.100,ground surface break (delta=57.2 at band 8),0,0,1,0,1,0,0,0,person,,36.0
+outdoor_footpath_018,outdoor_footpath,right,WALKABLE,UNKNOWN,0.100,surface mismatch ahead (span diff 94.2 px),0,0,1,0,1,0,0,0,person,,36.0
+outdoor_footpath_020,outdoor_footpath,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,person,person;person;person;person,39.7
+outdoor_footpath_020,outdoor_footpath,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,person,person;person;person;person,39.7
+outdoor_footpath_020,outdoor_footpath,right,WALKABLE,BLOCKED,0.850,semantic obstacle 37% (wall/table/stairs),0,0,1,0,1,0,0,0,person,person;person;person;person,39.7
+outdoor_footpath_022,outdoor_footpath,left,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (8%),0,0,1,0,1,0,0,0,person,,41.6
+outdoor_footpath_022,outdoor_footpath,centre,WALKABLE,UNKNOWN,0.100,brightness step 81.9 px (table edge?),0,0,1,0,1,0,0,0,person,,41.6
+outdoor_footpath_022,outdoor_footpath,right,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (7%),0,0,1,0,1,0,0,0,person,,41.6
+outdoor_footpath_024,outdoor_footpath,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,person,car,40.6
+outdoor_footpath_024,outdoor_footpath,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 54% (wall/table/stairs),0,0,1,0,1,0,0,0,person,car,40.6
+outdoor_footpath_024,outdoor_footpath,right,WALKABLE,BLOCKED,0.850,semantic obstacle 47% (wall/table/stairs),0,0,1,0,1,0,0,0,person,car,40.6
+outdoor_road_clear_002,outdoor_road_clear,left,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,1,car,,39.9
+outdoor_road_clear_002,outdoor_road_clear,centre,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,1,car,,39.9
+outdoor_road_clear_002,outdoor_road_clear,right,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,1,car,,39.9
+outdoor_road_clear_004,outdoor_road_clear,left,WALKABLE,WALKABLE,0.650,ground confirmed (model=0.2783882783882784),1,0,0,0,0,0,0,0,car,,38.4
+outdoor_road_clear_004,outdoor_road_clear,centre,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,0,car,,38.4
+outdoor_road_clear_004,outdoor_road_clear,right,WALKABLE,WALKABLE,0.650,ground confirmed (model=0.27797202797202797),1,0,0,0,0,0,0,0,car,,38.4
+outdoor_road_clear_006,outdoor_road_clear,left,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,0,car,car,35.6
+outdoor_road_clear_006,outdoor_road_clear,centre,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,0,car,car,35.6
+outdoor_road_clear_006,outdoor_road_clear,right,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,0,car,car,35.6
+outdoor_road_clear_008,outdoor_road_clear,left,WALKABLE,BLOCKED,0.850,semantic obstacle 38% (wall/table/stairs),0,0,1,0,1,0,0,0,car,person;person,37.3
+outdoor_road_clear_008,outdoor_road_clear,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,car,person;person,37.3
+outdoor_road_clear_008,outdoor_road_clear,right,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,car,person;person,37.3
+outdoor_road_clear_010,outdoor_road_clear,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,1,car,car;car;car;fire hydrant;car,40.6
+outdoor_road_clear_010,outdoor_road_clear,centre,WALKABLE,UNKNOWN,0.100,ground surface break (delta=54.7 at band 14),0,0,1,0,1,0,0,1,car,car;car;car;fire hydrant;car,40.6
+outdoor_road_clear_010,outdoor_road_clear,right,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,1,car,car;car;car;fire hydrant;car,40.6
+outdoor_road_clear_012,outdoor_road_clear,left,WALKABLE,BLOCKED,0.850,semantic obstacle 63% (wall/table/stairs),0,0,1,0,1,0,0,0,car,,38.0
+outdoor_road_clear_012,outdoor_road_clear,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 60% (wall/table/stairs),0,0,1,0,1,0,0,0,car,,38.0
+outdoor_road_clear_012,outdoor_road_clear,right,WALKABLE,BLOCKED,0.850,semantic obstacle 58% (wall/table/stairs),0,0,1,0,1,0,0,0,car,,38.0
+outdoor_road_clear_014,outdoor_road_clear,left,WALKABLE,UNKNOWN,0.100,brightness step 59.2 px (table edge?),0,0,1,0,1,0,0,0,car,,43.6
+outdoor_road_clear_014,outdoor_road_clear,centre,WALKABLE,UNKNOWN,0.100,surface mismatch ahead (span diff 116.2 px),0,0,1,0,1,0,0,0,car,,43.6
+outdoor_road_clear_014,outdoor_road_clear,right,WALKABLE,UNKNOWN,0.100,brightness step 58.1 px (table edge?),0,0,1,0,1,0,0,0,car,,43.6
+outdoor_road_clear_016,outdoor_road_clear,left,WALKABLE,BLOCKED,0.850,semantic obstacle 71% (wall/table/stairs),0,0,1,0,1,0,0,0,car,umbrella;car,34.3
+outdoor_road_clear_016,outdoor_road_clear,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,car,umbrella;car,34.3
+outdoor_road_clear_016,outdoor_road_clear,right,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,car,umbrella;car,34.3
+outdoor_road_clear_018,outdoor_road_clear,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,1,car,person;person;person,35.8
+outdoor_road_clear_018,outdoor_road_clear,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,1,car,person;person;person,35.8
+outdoor_road_clear_018,outdoor_road_clear,right,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,1,car,person;person;person,35.8
+outdoor_road_clear_020,outdoor_road_clear,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,car,bird,39.7
+outdoor_road_clear_020,outdoor_road_clear,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,car,bird,39.7
+outdoor_road_clear_020,outdoor_road_clear,right,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,car,bird,39.7
+outdoor_road_clear_022,outdoor_road_clear,left,WALKABLE,WALKABLE,0.800,ground confirmed (model=0.9413919413919414),1,0,0,0,0,0,0,0,car,,44.1
+outdoor_road_clear_022,outdoor_road_clear,centre,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,0,car,,44.1
+outdoor_road_clear_022,outdoor_road_clear,right,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,0,car,,44.1
+outdoor_road_clear_024,outdoor_road_clear,left,WALKABLE,BLOCKED,0.850,semantic obstacle 26% (wall/table/stairs),0,0,1,0,1,0,0,0,car,kite,37.5
+outdoor_road_clear_024,outdoor_road_clear,centre,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,0,car,kite,37.5
+outdoor_road_clear_024,outdoor_road_clear,right,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (6%),0,0,1,0,1,0,0,0,car,kite,37.5
+pedestrian_crossing_002,pedestrian_crossing,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,person;person;person;person;person;person;person;person;person;person;person;person;person;person;person,38.9
+pedestrian_crossing_002,pedestrian_crossing,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,person;person;person;person;person;person;person;person;person;person;person;person;person;person;person,38.9
+pedestrian_crossing_002,pedestrian_crossing,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,person;person;person;person;person;person;person;person;person;person;person;person;person;person;person,38.9
+pedestrian_crossing_004,pedestrian_crossing,left,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,0,0,person,person;car;car,41.5
+pedestrian_crossing_004,pedestrian_crossing,centre,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,0,0,person,person;car;car,41.5
+pedestrian_crossing_004,pedestrian_crossing,right,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,0,0,person,person;car;car,41.5
+pedestrian_crossing_006,pedestrian_crossing,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,horse;person;person;person;person,31.6
+pedestrian_crossing_006,pedestrian_crossing,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,horse;person;person;person;person,31.6
+pedestrian_crossing_006,pedestrian_crossing,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,horse;person;person;person;person,31.6
+pedestrian_crossing_008,pedestrian_crossing,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,person;person;person;person;person;person;person,37.9
+pedestrian_crossing_008,pedestrian_crossing,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,person;person;person;person;person;person;person,37.9
+pedestrian_crossing_008,pedestrian_crossing,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,person;person;person;person;person;person;person,37.9
+pedestrian_crossing_010,pedestrian_crossing,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,person,37.1
+pedestrian_crossing_010,pedestrian_crossing,centre,BLOCKED,BLOCKED,0.850,semantic obstacle 23% (wall/table/stairs),0,0,0,1,0,0,0,0,person,person,37.1
+pedestrian_crossing_010,pedestrian_crossing,right,BLOCKED,BLOCKED,0.850,semantic obstacle 18% (wall/table/stairs),0,0,0,1,0,0,0,0,person,person,37.1
+pedestrian_crossing_012,pedestrian_crossing,left,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,0,0,person,,36.8
+pedestrian_crossing_012,pedestrian_crossing,centre,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,0,0,person,,36.8
+pedestrian_crossing_012,pedestrian_crossing,right,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,0,0,person,,36.8
+pedestrian_crossing_014,pedestrian_crossing,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,car;car;person;person;person;truck,41.2
+pedestrian_crossing_014,pedestrian_crossing,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,car;car;person;person;person;truck,41.2
+pedestrian_crossing_014,pedestrian_crossing,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,car;car;person;person;person;truck,41.2
+pedestrian_crossing_016,pedestrian_crossing,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,person;person;person;person;person;person;person;person;person;person;person,36.2
+pedestrian_crossing_016,pedestrian_crossing,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,person;person;person;person;person;person;person;person;person;person;person,36.2
+pedestrian_crossing_016,pedestrian_crossing,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,person;person;person;person;person;person;person;person;person;person;person,36.2
+pedestrian_crossing_018,pedestrian_crossing,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,person;person;person;person;bus;person;person;person;person;person;bus;person;person;person,34.6
+pedestrian_crossing_018,pedestrian_crossing,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,person;person;person;person;bus;person;person;person;person;person;bus;person;person;person,34.6
+pedestrian_crossing_018,pedestrian_crossing,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,person;person;person;person;bus;person;person;person;person;person;bus;person;person;person,34.6
+pedestrian_crossing_020,pedestrian_crossing,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,person;person;person;person;person,31.9
+pedestrian_crossing_020,pedestrian_crossing,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,person;person;person;person;person,31.9
+pedestrian_crossing_020,pedestrian_crossing,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,person,person;person;person;person;person,31.9
+pedestrian_crossing_022,pedestrian_crossing,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,1,person,person;suitcase;person,34.9
+pedestrian_crossing_022,pedestrian_crossing,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,1,person,person;suitcase;person,34.9
+pedestrian_crossing_022,pedestrian_crossing,right,BLOCKED,UNKNOWN,0.100,surface mismatch ahead (span diff 134.7 px),0,0,0,1,0,0,0,1,person,person;suitcase;person,34.9
+pedestrian_crossing_024,pedestrian_crossing,left,BLOCKED,BLOCKED,0.850,semantic obstacle 66% (wall/table/stairs),0,0,0,1,0,0,0,0,person,,37.1
+pedestrian_crossing_024,pedestrian_crossing,centre,BLOCKED,BLOCKED,0.850,semantic obstacle 33% (wall/table/stairs),0,0,0,1,0,0,0,0,person,,37.1
+pedestrian_crossing_024,pedestrian_crossing,right,BLOCKED,BLOCKED,0.800,scene obstacle 35% (stairs/building wall),0,0,0,1,0,0,0,0,person,,37.1
+road_manhole_002,road_manhole,left,WALKABLE,BLOCKED,0.850,semantic obstacle 45% (wall/table/stairs),0,0,1,0,1,0,0,0,,,36.7
+road_manhole_002,road_manhole,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 37% (wall/table/stairs),0,0,1,0,1,0,0,0,,,36.7
+road_manhole_002,road_manhole,right,WALKABLE,BLOCKED,0.850,semantic obstacle 37% (wall/table/stairs),0,0,1,0,1,0,0,0,,,36.7
+road_manhole_004,road_manhole,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,suitcase,41.7
+road_manhole_004,road_manhole,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,suitcase,41.7
+road_manhole_004,road_manhole,right,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,suitcase,41.7
+road_manhole_006,road_manhole,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,clock,40.5
+road_manhole_006,road_manhole,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,clock,40.5
+road_manhole_006,road_manhole,right,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,clock,40.5
+road_manhole_008,road_manhole,left,WALKABLE,BLOCKED,0.850,semantic obstacle 79% (wall/table/stairs),0,0,1,0,1,0,0,0,,,36.4
+road_manhole_008,road_manhole,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 45% (wall/table/stairs),0,0,1,0,1,0,0,0,,,36.4
+road_manhole_008,road_manhole,right,WALKABLE,BLOCKED,0.850,semantic obstacle 59% (wall/table/stairs),0,0,1,0,1,0,0,0,,,36.4
+road_manhole_010,road_manhole,left,WALKABLE,BLOCKED,0.850,semantic obstacle 83% (wall/table/stairs),0,0,1,0,1,0,0,1,,,40.6
+road_manhole_010,road_manhole,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 83% (wall/table/stairs),0,0,1,0,1,0,0,1,,,40.6
+road_manhole_010,road_manhole,right,WALKABLE,BLOCKED,0.850,semantic obstacle 85% (wall/table/stairs),0,0,1,0,1,0,0,1,,,40.6
+road_manhole_012,road_manhole,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,cell phone,34.4
+road_manhole_012,road_manhole,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,cell phone,34.4
+road_manhole_012,road_manhole,right,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,cell phone,34.4
+road_manhole_014,road_manhole,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,clock;clock,39.0
+road_manhole_014,road_manhole,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,clock;clock,39.0
+road_manhole_014,road_manhole,right,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,clock;clock,39.0
+road_manhole_016,road_manhole,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,clock,37.1
+road_manhole_016,road_manhole,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,clock,37.1
+road_manhole_016,road_manhole,right,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,clock,37.1
+road_manhole_018,road_manhole,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,clock,39.8
+road_manhole_018,road_manhole,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,clock,39.8
+road_manhole_018,road_manhole,right,WALKABLE,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,1,0,1,0,0,0,,clock,39.8
+road_manhole_020,road_manhole,left,WALKABLE,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,1,0,1,0,0,0,,,38.0
+road_manhole_020,road_manhole,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,1,0,1,0,0,0,,,38.0
+road_manhole_020,road_manhole,right,WALKABLE,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,1,0,1,0,0,0,,,38.0
+road_manhole_022,road_manhole,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,keyboard,36.8
+road_manhole_022,road_manhole,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,keyboard,36.8
+road_manhole_022,road_manhole,right,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,keyboard,36.8
+road_manhole_024,road_manhole,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,clock,38.0
+road_manhole_024,road_manhole,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,clock,38.0
+road_manhole_024,road_manhole,right,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,clock,38.0
+road_patch_puddle_002,road_patch_puddle,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,car;traffic light;traffic light;traffic light;traffic light,41.3
+road_patch_puddle_002,road_patch_puddle,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,car;traffic light;traffic light;traffic light;traffic light,41.3
+road_patch_puddle_002,road_patch_puddle,right,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,car;traffic light;traffic light;traffic light;traffic light,41.3
+road_patch_puddle_004,road_patch_puddle,left,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,0,,,42.6
+road_patch_puddle_004,road_patch_puddle,centre,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,0,,,42.6
+road_patch_puddle_004,road_patch_puddle,right,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (8%),0,0,1,0,1,0,0,0,,,42.6
+road_patch_puddle_006,road_patch_puddle,left,WALKABLE,UNKNOWN,0.100,ground surface break (delta=38.2 at band 1),0,0,1,0,1,0,0,0,,,39.7
+road_patch_puddle_006,road_patch_puddle,centre,WALKABLE,UNKNOWN,0.100,surface mismatch ahead (span diff 64.3 px),0,0,1,0,1,0,0,0,,,39.7
+road_patch_puddle_006,road_patch_puddle,right,WALKABLE,BLOCKED,0.850,semantic obstacle 55% (wall/table/stairs),0,0,1,0,1,0,0,0,,,39.7
+road_patch_puddle_008,road_patch_puddle,left,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,1,,,42.9
+road_patch_puddle_008,road_patch_puddle,centre,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,1,,,42.9
+road_patch_puddle_008,road_patch_puddle,right,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,1,,,42.9
+road_patch_puddle_010,road_patch_puddle,left,WALKABLE,WALKABLE,0.800,ground confirmed (model=0.9945054945054945),1,0,0,0,0,0,0,0,,car;car;car;car,41.0
+road_patch_puddle_010,road_patch_puddle,centre,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,0,,car;car;car;car,41.0
+road_patch_puddle_010,road_patch_puddle,right,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,0,,car;car;car;car,41.0
+road_patch_puddle_012,road_patch_puddle,left,WALKABLE,BLOCKED,0.850,semantic obstacle 15% (wall/table/stairs),0,0,1,0,1,0,0,1,,,36.9
+road_patch_puddle_012,road_patch_puddle,centre,WALKABLE,BLOCKED,0.850,semantic obstacle 35% (wall/table/stairs),0,0,1,0,1,0,0,1,,,36.9
+road_patch_puddle_012,road_patch_puddle,right,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,1,,,36.9
+road_patch_puddle_014,road_patch_puddle,left,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,0,,kite,45.8
+road_patch_puddle_014,road_patch_puddle,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,0,,kite,45.8
+road_patch_puddle_014,road_patch_puddle,right,WALKABLE,UNKNOWN,0.100,surface mismatch ahead (span diff 33.5 px),0,0,1,0,1,0,0,0,,kite,45.8
+road_patch_puddle_016,road_patch_puddle,left,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,0,,,40.4
+road_patch_puddle_016,road_patch_puddle,centre,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,0,,,40.4
+road_patch_puddle_016,road_patch_puddle,right,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,0,,,40.4
+road_patch_puddle_018,road_patch_puddle,left,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,1,,car;car;car;car,36.4
+road_patch_puddle_018,road_patch_puddle,centre,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,1,,car;car;car;car,36.4
+road_patch_puddle_018,road_patch_puddle,right,WALKABLE,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,1,0,1,0,0,1,,car;car;car;car,36.4
+road_patch_puddle_020,road_patch_puddle,left,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,1,,,41.0
+road_patch_puddle_020,road_patch_puddle,centre,WALKABLE,WALKABLE,0.800,ground confirmed (model=1.0),1,0,0,0,0,0,0,1,,,41.0
+road_patch_puddle_020,road_patch_puddle,right,WALKABLE,WALKABLE,0.800,ground confirmed (model=0.9982517482517482),1,0,0,0,0,0,0,1,,,41.0
+road_patch_puddle_022,road_patch_puddle,left,WALKABLE,UNKNOWN,0.100,ground surface break (delta=34.7 at band 12),0,0,1,0,1,0,0,0,,,35.2
+road_patch_puddle_022,road_patch_puddle,centre,WALKABLE,UNKNOWN,0.100,surface mismatch ahead (span diff 58.5 px),0,0,1,0,1,0,0,0,,,35.2
+road_patch_puddle_022,road_patch_puddle,right,WALKABLE,UNKNOWN,0.100,surface mismatch ahead (span diff 70.0 px),0,0,1,0,1,0,0,0,,,35.2
+road_patch_puddle_024,road_patch_puddle,left,WALKABLE,WALKABLE,0.800,ground confirmed (model=0.8443223443223443),1,0,0,0,0,0,0,0,,car;car,40.6
+road_patch_puddle_024,road_patch_puddle,centre,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,0,,car;car,40.6
+road_patch_puddle_024,road_patch_puddle,right,WALKABLE,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,1,0,1,0,0,0,,car;car,40.6
+road_pothole_002,road_pothole,left,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,1,,,33.5
+road_pothole_002,road_pothole,centre,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,1,,,33.5
+road_pothole_002,road_pothole,right,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,1,,,33.5
+road_pothole_004,road_pothole,left,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,1,0,,car;truck;bench,34.0
+road_pothole_004,road_pothole,centre,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,1,0,,car;truck;bench,34.0
+road_pothole_004,road_pothole,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,1,0,,car;truck;bench,34.0
+road_pothole_006,road_pothole,left,BLOCKED,BLOCKED,0.850,semantic obstacle 89% (wall/table/stairs),0,0,0,1,0,0,1,0,,,41.0
+road_pothole_006,road_pothole,centre,BLOCKED,BLOCKED,0.850,semantic obstacle 38% (wall/table/stairs),0,0,0,1,0,0,1,0,,,41.0
+road_pothole_006,road_pothole,right,BLOCKED,BLOCKED,0.850,semantic obstacle 37% (wall/table/stairs),0,0,0,1,0,0,1,0,,,41.0
+road_pothole_008,road_pothole,left,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,0,,,34.7
+road_pothole_008,road_pothole,centre,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,0,,,34.7
+road_pothole_008,road_pothole,right,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,0,,,34.7
+road_pothole_010,road_pothole,left,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,1,,person;motorcycle,40.7
+road_pothole_010,road_pothole,centre,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,1,,person;motorcycle,40.7
+road_pothole_010,road_pothole,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,1,1,,person;motorcycle,40.7
+road_pothole_012,road_pothole,left,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,0,,car;car;car;car;car;car;car,42.6
+road_pothole_012,road_pothole,centre,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,0,,car;car;car;car;car;car;car,42.6
+road_pothole_012,road_pothole,right,BLOCKED,WALKABLE,0.800,ground confirmed (model=0.9755244755244755),0,1,0,0,0,1,1,0,,car;car;car;car;car;car;car,42.6
+road_pothole_014,road_pothole,left,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,0,,motorcycle,34.1
+road_pothole_014,road_pothole,centre,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,0,,motorcycle,34.1
+road_pothole_014,road_pothole,right,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,0,,motorcycle,34.1
+road_pothole_016,road_pothole,left,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,0,,car;person;person,37.6
+road_pothole_016,road_pothole,centre,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,0,,car;person;person,37.6
+road_pothole_016,road_pothole,right,BLOCKED,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,1,0,,car;person;person,37.6
+road_pothole_018,road_pothole,left,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,0,,car;car;car,26.0
+road_pothole_018,road_pothole,centre,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,0,,car;car;car,26.0
+road_pothole_018,road_pothole,right,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,0,,car;car;car,26.0
+road_pothole_020,road_pothole,left,BLOCKED,WALKABLE,0.800,ground confirmed (model=0.9468864468864469),0,1,0,0,0,1,1,1,,,38.8
+road_pothole_020,road_pothole,centre,BLOCKED,WALKABLE,0.800,ground confirmed (model=0.5591715976331361),0,1,0,0,0,1,1,1,,,38.8
+road_pothole_020,road_pothole,right,BLOCKED,WALKABLE,0.800,ground confirmed (model=0.9143356643356644),0,1,0,0,0,1,1,1,,,38.8
+road_pothole_022,road_pothole,left,BLOCKED,WALKABLE,0.800,ground confirmed (model=0.8058608058608059),0,1,0,0,0,1,1,0,,car;truck;car;car;truck;car,37.8
+road_pothole_022,road_pothole,centre,BLOCKED,UNKNOWN,0.100,insufficient ground evidence (23%),0,0,0,1,0,0,1,0,,car;truck;car;car;truck;car,37.8
+road_pothole_022,road_pothole,right,BLOCKED,WALKABLE,0.800,ground confirmed (model=1.0),0,1,0,0,0,1,1,0,,car;truck;car;car;truck;car,37.8
+road_pothole_024,road_pothole,left,BLOCKED,UNKNOWN,0.100,insufficient ground evidence (3%),0,0,0,1,0,0,1,1,,car,34.9
+road_pothole_024,road_pothole,centre,BLOCKED,WALKABLE,0.800,ground confirmed (model=0.5295857988165681),0,1,0,0,0,1,1,1,,car,34.9
+road_pothole_024,road_pothole,right,BLOCKED,UNKNOWN,0.100,insufficient ground evidence (20%),0,0,0,1,0,0,1,1,,car,34.9
+stairs_down_002,stairs_down,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 22% (wall/table/stairs),0,0,0,1,0,0,0,0,,,28.6
+stairs_down_002,stairs_down,centre,UNKNOWN,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,0,1,0,0,0,0,,,28.6
+stairs_down_002,stairs_down,right,UNKNOWN,UNKNOWN,0.100,insufficient ground evidence (1%),0,0,0,1,0,0,0,0,,,28.6
+stairs_down_004,stairs_down,left,UNKNOWN,BLOCKED,0.800,scene obstacle 58% (stairs/building wall),0,0,0,1,0,0,0,0,,,32.4
+stairs_down_004,stairs_down,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 63% (wall/table/stairs),0,0,0,1,0,0,0,0,,,32.4
+stairs_down_004,stairs_down,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,0,1,0,0,0,0,,,32.4
+stairs_down_006,stairs_down,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 68% (wall/table/stairs),0,0,0,1,0,0,0,0,,person;person;handbag;handbag,34.2
+stairs_down_006,stairs_down,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;person;handbag;handbag,34.2
+stairs_down_006,stairs_down,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;person;handbag;handbag,34.2
+stairs_down_008,stairs_down,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 68% (wall/table/stairs),0,0,0,1,0,0,0,0,,,33.6
+stairs_down_008,stairs_down,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 37% (wall/table/stairs),0,0,0,1,0,0,0,0,,,33.6
+stairs_down_008,stairs_down,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 83% (wall/table/stairs),0,0,0,1,0,0,0,0,,,33.6
+stairs_down_010,stairs_down,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 27% (wall/table/stairs),0,0,0,1,0,0,0,0,,,36.7
+stairs_down_010,stairs_down,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 31% (wall/table/stairs),0,0,0,1,0,0,0,0,,,36.7
+stairs_down_010,stairs_down,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 32% (wall/table/stairs),0,0,0,1,0,0,0,0,,,36.7
+stairs_down_012,stairs_down,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 89% (wall/table/stairs),0,0,0,1,0,0,0,0,,,37.1
+stairs_down_012,stairs_down,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 89% (wall/table/stairs),0,0,0,1,0,0,0,0,,,37.1
+stairs_down_012,stairs_down,right,UNKNOWN,WALKABLE,0.800,ground confirmed (model=0.6538461538461539),0,1,0,0,0,1,0,0,,,37.1
+stairs_down_014,stairs_down,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;person,42.1
+stairs_down_014,stairs_down,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;person,42.1
+stairs_down_014,stairs_down,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 23% (wall/table/stairs),0,0,0,1,0,0,0,0,,person;person,42.1
+stairs_down_016,stairs_down,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;person;person;boat,44.6
+stairs_down_016,stairs_down,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;person;person;boat,44.6
+stairs_down_016,stairs_down,right,UNKNOWN,UNKNOWN,0.100,surface mismatch ahead (span diff 81.7 px),0,0,0,1,0,0,0,0,,person;person;person;boat,44.6
+stairs_down_018,stairs_down,left,UNKNOWN,UNKNOWN,0.100,insufficient ground evidence (15%),0,0,0,1,0,0,0,0,,,38.2
+stairs_down_018,stairs_down,centre,UNKNOWN,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,0,1,0,0,0,0,,,38.2
+stairs_down_018,stairs_down,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 39% (wall/table/stairs),0,0,0,1,0,0,0,0,,,38.2
+stairs_down_020,stairs_down,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,fire hydrant,34.8
+stairs_down_020,stairs_down,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,fire hydrant,34.8
+stairs_down_020,stairs_down,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,fire hydrant,34.8
+stairs_down_022,stairs_down,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 74% (wall/table/stairs),0,0,0,1,0,0,0,0,,,36.0
+stairs_down_022,stairs_down,centre,UNKNOWN,BLOCKED,0.800,scene obstacle 46% (stairs/building wall),0,0,0,1,0,0,0,0,,,36.0
+stairs_down_022,stairs_down,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 39% (wall/table/stairs),0,0,0,1,0,0,0,0,,,36.0
+stairs_down_024,stairs_down,left,UNKNOWN,WALKABLE,0.800,ground confirmed (model=0.7417582417582418),0,1,0,0,0,1,0,0,,,33.4
+stairs_down_024,stairs_down,centre,UNKNOWN,UNKNOWN,0.100,ground surface break (delta=35.4 at band 1),0,0,0,1,0,0,0,0,,,33.4
+stairs_down_024,stairs_down,right,UNKNOWN,WALKABLE,0.800,ground confirmed (model=0.44405594405594406),0,1,0,0,0,1,0,0,,,33.4
+stairs_up_002,stairs_up,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 58% (wall/table/stairs),0,0,0,1,0,0,0,0,,car,41.6
+stairs_up_002,stairs_up,centre,UNKNOWN,UNKNOWN,0.100,ground surface break (delta=29.7 at band 0),0,0,0,1,0,0,0,0,,car,41.6
+stairs_up_002,stairs_up,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 22% (wall/table/stairs),0,0,0,1,0,0,0,0,,car,41.6
+stairs_up_004,stairs_up,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 29% (wall/table/stairs),0,0,0,1,0,0,0,0,,potted plant,42.0
+stairs_up_004,stairs_up,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 29% (wall/table/stairs),0,0,0,1,0,0,0,0,,potted plant,42.0
+stairs_up_004,stairs_up,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,potted plant,42.0
+stairs_up_006,stairs_up,left,UNKNOWN,UNKNOWN,0.100,insufficient ground evidence (12%),0,0,0,1,0,0,0,0,,,37.0
+stairs_up_006,stairs_up,centre,UNKNOWN,UNKNOWN,0.100,insufficient ground evidence (12%),0,0,0,1,0,0,0,0,,,37.0
+stairs_up_006,stairs_up,right,UNKNOWN,UNKNOWN,0.100,insufficient ground evidence (5%),0,0,0,1,0,0,0,0,,,37.0
+stairs_up_008,stairs_up,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,bottle;potted plant;vase;bottle;bottle,33.9
+stairs_up_008,stairs_up,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,bottle;potted plant;vase;bottle;bottle,33.9
+stairs_up_008,stairs_up,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,bottle;potted plant;vase;bottle;bottle,33.9
+stairs_up_010,stairs_up,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,0,1,0,0,0,0,,,40.1
+stairs_up_010,stairs_up,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,0,1,0,0,0,0,,,40.1
+stairs_up_010,stairs_up,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,0,1,0,0,0,0,,,40.1
+stairs_up_012,stairs_up,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 50% (wall/table/stairs),0,0,0,1,0,0,0,0,,,37.5
+stairs_up_012,stairs_up,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 54% (wall/table/stairs),0,0,0,1,0,0,0,0,,,37.5
+stairs_up_012,stairs_up,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 74% (wall/table/stairs),0,0,0,1,0,0,0,0,,,37.5
+stairs_up_014,stairs_up,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 85% (wall/table/stairs),0,0,0,1,0,0,0,1,,,39.1
+stairs_up_014,stairs_up,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 98% (wall/table/stairs),0,0,0,1,0,0,0,1,,,39.1
+stairs_up_014,stairs_up,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 99% (wall/table/stairs),0,0,0,1,0,0,0,1,,,39.1
+stairs_up_016,stairs_up,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,clock,42.0
+stairs_up_016,stairs_up,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,clock,42.0
+stairs_up_016,stairs_up,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,clock,42.0
+stairs_up_018,stairs_up,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 72% (wall/table/stairs),0,0,0,1,0,0,0,0,,,37.9
+stairs_up_018,stairs_up,centre,UNKNOWN,BLOCKED,0.800,scene obstacle 58% (stairs/building wall),0,0,0,1,0,0,0,0,,,37.9
+stairs_up_018,stairs_up,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 73% (wall/table/stairs),0,0,0,1,0,0,0,0,,,37.9
+stairs_up_020,stairs_up,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 41% (wall/table/stairs),0,0,0,1,0,0,0,0,,person,41.3
+stairs_up_020,stairs_up,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 16% (wall/table/stairs),0,0,0,1,0,0,0,0,,person,41.3
+stairs_up_020,stairs_up,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 55% (wall/table/stairs),0,0,0,1,0,0,0,0,,person,41.3
+stairs_up_022,stairs_up,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 49% (wall/table/stairs),0,0,0,1,0,0,0,0,,banana,35.2
+stairs_up_022,stairs_up,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 92% (wall/table/stairs),0,0,0,1,0,0,0,0,,banana,35.2
+stairs_up_022,stairs_up,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,banana,35.2
+stairs_up_024,stairs_up,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,0,1,0,0,0,0,,train,43.9
+stairs_up_024,stairs_up,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,train,43.9
+stairs_up_024,stairs_up,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,train,43.9
+table_corner_002,table_corner,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 35% (wall/table/stairs),0,0,0,1,0,0,0,0,,apple;apple,37.4
+table_corner_002,table_corner,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 33% (wall/table/stairs),0,0,0,1,0,0,0,0,,apple;apple,37.4
+table_corner_002,table_corner,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,apple;apple,37.4
+table_corner_004,table_corner,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,car;car;car,32.2
+table_corner_004,table_corner,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 16% (wall/table/stairs),0,0,0,1,0,0,0,0,,car;car;car,32.2
+table_corner_004,table_corner,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,car;car;car,32.2
+table_corner_006,table_corner,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 78% (wall/table/stairs),0,0,0,1,0,0,0,0,,,32.7
+table_corner_006,table_corner,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 100% (wall/table/stairs),0,0,0,1,0,0,0,0,,,32.7
+table_corner_006,table_corner,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 68% (wall/table/stairs),0,0,0,1,0,0,0,0,,,32.7
+table_corner_008,table_corner,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 17% (wall/table/stairs),0,0,0,1,0,0,0,0,,,34.4
+table_corner_008,table_corner,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 36% (wall/table/stairs),0,0,0,1,0,0,0,0,,,34.4
+table_corner_008,table_corner,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 97% (wall/table/stairs),0,0,0,1,0,0,0,0,,,34.4
+table_corner_010,table_corner,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;person;person;person;person;person;person;dining table;cake,35.5
+table_corner_010,table_corner,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;person;person;person;person;person;person;dining table;cake,35.5
+table_corner_010,table_corner,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;person;person;person;person;person;person;dining table;cake,35.5
+table_corner_012,table_corner,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;person;person;person;person;wine glass;person;person;dining table;person;person;tie;cup;cup;bottle;wine glass;person,35.4
+table_corner_012,table_corner,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;person;person;person;person;wine glass;person;person;dining table;person;person;tie;cup;cup;bottle;wine glass;person,35.4
+table_corner_012,table_corner,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;person;person;person;person;wine glass;person;person;dining table;person;person;tie;cup;cup;bottle;wine glass;person,35.4
+table_corner_014,table_corner,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,wine glass;bowl;vase;dining table;bottle;bowl;cup,33.0
+table_corner_014,table_corner,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,wine glass;bowl;vase;dining table;bottle;bowl;cup,33.0
+table_corner_014,table_corner,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,wine glass;bowl;vase;dining table;bottle;bowl;cup,33.0
+table_corner_016,table_corner,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 71% (wall/table/stairs),0,0,0,1,0,0,0,0,,,24.5
+table_corner_016,table_corner,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 76% (wall/table/stairs),0,0,0,1,0,0,0,0,,,24.5
+table_corner_016,table_corner,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 74% (wall/table/stairs),0,0,0,1,0,0,0,0,,,24.5
+table_corner_018,table_corner,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 48% (wall/table/stairs),0,0,0,1,0,0,0,0,,bowl;apple,35.6
+table_corner_018,table_corner,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,bowl;apple,35.6
+table_corner_018,table_corner,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,bowl;apple,35.6
+table_corner_020,table_corner,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 73% (wall/table/stairs),0,0,0,1,0,0,0,0,,potted plant,35.2
+table_corner_020,table_corner,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 80% (wall/table/stairs),0,0,0,1,0,0,0,0,,potted plant,35.2
+table_corner_020,table_corner,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,potted plant,35.2
+table_corner_022,table_corner,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;bowl;bottle;wine glass;bowl;chair;person,35.3
+table_corner_022,table_corner,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;bowl;bottle;wine glass;bowl;chair;person,35.3
+table_corner_022,table_corner,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,person;bowl;bottle;wine glass;bowl;chair;person,35.3
+table_corner_024,table_corner,left,UNKNOWN,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,0,1,0,0,0,0,,,32.4
+table_corner_024,table_corner,centre,UNKNOWN,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,0,1,0,0,0,0,,,32.4
+table_corner_024,table_corner,right,UNKNOWN,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,0,1,0,0,0,0,,,32.4
+table_edge_002,table_edge,left,UNKNOWN,UNKNOWN,0.000,frame over-exposed (mean=249.9),0,0,0,1,0,0,0,0,,,333.3
+table_edge_002,table_edge,centre,UNKNOWN,UNKNOWN,0.000,frame over-exposed (mean=249.9),0,0,0,1,0,0,0,0,,,333.3
+table_edge_002,table_edge,right,UNKNOWN,UNKNOWN,0.000,frame over-exposed (mean=249.9),0,0,0,1,0,0,0,0,,,333.3
+table_edge_004,table_edge,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,book,30.6
+table_edge_004,table_edge,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,book,30.6
+table_edge_004,table_edge,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,book,30.6
+table_edge_006,table_edge,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,book;book,42.5
+table_edge_006,table_edge,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,book;book,42.5
+table_edge_006,table_edge,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,book;book,42.5
+table_edge_008,table_edge,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 31% (wall/table/stairs),0,0,0,1,0,0,0,0,,,41.3
+table_edge_008,table_edge,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 20% (wall/table/stairs),0,0,0,1,0,0,0,0,,,41.3
+table_edge_008,table_edge,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 55% (wall/table/stairs),0,0,0,1,0,0,0,0,,,41.3
+table_edge_010,table_edge,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,kite;kite;kite;kite;kite;kite;kite;kite;kite;bird;kite,38.7
+table_edge_010,table_edge,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 42% (wall/table/stairs),0,0,0,1,0,0,0,0,,kite;kite;kite;kite;kite;kite;kite;kite;kite;bird;kite,38.7
+table_edge_010,table_edge,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 33% (wall/table/stairs),0,0,0,1,0,0,0,0,,kite;kite;kite;kite;kite;kite;kite;kite;kite;bird;kite,38.7
+table_edge_012,table_edge,left,UNKNOWN,UNKNOWN,0.100,insufficient ground evidence (0%),0,0,0,1,0,0,0,0,,bench,36.4
+table_edge_012,table_edge,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,bench,36.4
+table_edge_012,table_edge,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,bench,36.4
+table_edge_014,table_edge,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,1,,bench;bench,39.5
+table_edge_014,table_edge,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,1,,bench;bench,39.5
+table_edge_014,table_edge,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,1,,bench;bench,39.5
+table_edge_016,table_edge,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 85% (wall/table/stairs),0,0,0,1,0,0,0,0,,,38.2
+table_edge_016,table_edge,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 38% (wall/table/stairs),0,0,0,1,0,0,0,0,,,38.2
+table_edge_016,table_edge,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 58% (wall/table/stairs),0,0,0,1,0,0,0,0,,,38.2
+table_edge_018,table_edge,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 82% (wall/table/stairs),0,0,0,1,0,0,0,0,,tv;potted plant,37.6
+table_edge_018,table_edge,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,tv;potted plant,37.6
+table_edge_018,table_edge,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,tv;potted plant,37.6
+table_edge_020,table_edge,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,bench;bench;bench,38.5
+table_edge_020,table_edge,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,bench;bench;bench,38.5
+table_edge_020,table_edge,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,bench;bench;bench,38.5
+table_edge_022,table_edge,left,UNKNOWN,BLOCKED,0.850,semantic obstacle 93% (wall/table/stairs),0,0,0,1,0,0,0,0,,,41.4
+table_edge_022,table_edge,centre,UNKNOWN,BLOCKED,0.850,semantic obstacle 39% (wall/table/stairs),0,0,0,1,0,0,0,0,,,41.4
+table_edge_022,table_edge,right,UNKNOWN,BLOCKED,0.850,semantic obstacle 49% (wall/table/stairs),0,0,0,1,0,0,0,0,,,41.4
+table_edge_024,table_edge,left,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,bench,34.8
+table_edge_024,table_edge,centre,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,bench,34.8
+table_edge_024,table_edge,right,UNKNOWN,BLOCKED,0.950,YOLO obstacle in ground corridor,0,0,0,1,0,0,0,0,,bench,34.8

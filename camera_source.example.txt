@@ -1,0 +1,8 @@
+# SpatialVector-HMI Camera Source Configuration Example
+# Copy this file to camera_source.txt and edit with your actual camera source:
+# 1. For VDO.Ninja phone streaming: https://vdo.ninja/?view=YOUR_ROOM_ID
+# 2. For local USB / Built-in Webcam: 0
+# 3. For IP Camera / RTSP / DroidCam: http://192.168.1.50:8080/video
+#
+# Tip: On your phone, open https://vdo.ninja/?push=YOUR_ROOM_ID and grant camera permission.
+https://vdo.ninja/?view=spatialvector_demo

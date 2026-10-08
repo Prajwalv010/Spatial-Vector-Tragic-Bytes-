@@ -1,0 +1,27 @@
+# SpatialVector-HMI — Python Dependencies
+# Install with: pip install -r requirements.txt
+# Note: For VDO.Ninja WebRTC stream capture, also run: playwright install chromium
+
+# Core Computer Vision & Deep Learning
+opencv-python>=4.8.0
+numpy>=1.24.0
+ultralytics>=8.0.0
+torch>=2.0.0
+transformers>=4.40.0,<5.0.0
+huggingface_hub>=0.20.0,<1.0.0
+
+# WebRTC Phone Stream Capture via Headless Chromium
+playwright>=1.40.0
+
+# Telemetry Gateway & Web Dashboard
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+websockets>=12.0
+pyyaml>=6.0
+
+# Hardware Interface (Arduino Haptic Belt)
+pyserial>=3.5
+
+# Testing & Verification
+pytest>=7.4.0
+pytest-asyncio>=0.21.0

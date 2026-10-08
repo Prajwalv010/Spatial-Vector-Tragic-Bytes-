@@ -1,0 +1,34 @@
+{
+  "table_edge": {
+    "skip_0": {
+      "hazard_file": "table_edge_001.jpg",
+      "latency_frames": 1,
+      "latency_ms": 63.3,
+      "decision": "UNKNOWN",
+      "reason": "insufficient ground evidence (0%)"
+    },
+    "skip_1": {
+      "hazard_file": "table_edge_001.jpg",
+      "latency_frames": 1,
+      "latency_ms": 63.3,
+      "decision": "UNKNOWN",
+      "reason": "brightness step 128.4 px (table edge?)"
+    }
+  },
+  "stairs_down": {
+    "skip_0": {
+      "hazard_file": "stairs_down_001.jpg",
+      "latency_frames": 1,
+      "latency_ms": 63.3,
+      "decision": "BLOCKED",
+      "reason": "semantic obstacle 45% (wall/table/stairs)"
+    },
+    "skip_1": {
+      "hazard_file": "stairs_down_001.jpg",
+      "latency_frames": 1,
+      "latency_ms": 63.3,
+      "decision": "UNKNOWN",
+      "reason": "ground surface break (delta=33.2 at band 14)"
+    }
+  }
+}
