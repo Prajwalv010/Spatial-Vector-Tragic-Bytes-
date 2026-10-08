@@ -29,6 +29,8 @@ Distance is not the same as danger. Incomplete or misleading information creates
 | Which direction is safer? | Safe-corridor selection (L/C/R) |
 | How do we communicate with minimal cognitive load? | Directional vibration haptics |
 
+📖 **Mathematical & Engineering Proofs:** For formal vector equations, quadratic TTC solvers, and risk scoring logic, read the [Mathematical & Geometric Specifications](docs/MATHEMATICAL_SPECIFICATION.md).
+
 ---
 
 ## Core Thesis
